@@ -1,0 +1,150 @@
+<div class="materia">
+    <mat-toolbar>
+        <a mat-button [routerLink]="['/metodologia/1']" routerLinkActive="active">Bloque 1</a>
+        <a mat-button [routerLink]="['/metodologia/ma']" routerLinkActive="active">Materiales de
+            apoyo</a>
+        <a mat-button [routerLink]="['/metodologia/ref']" routerLinkActive="active">Referencias</a>
+    </mat-toolbar>
+
+    <div class="" [ngSwitch]="seccion$ | async">
+        <div *ngSwitchCase="1" class="animated fadeIn">
+            <h2>Introducción a la metodología de investigación
+            </h2>
+            <section>
+                <h3>Tema: Antecedentes de la metodología de la investigación</h3>
+                <p>
+                    Los antecedentes de la investigación es la información que identifica y describe la historia, así
+                    como también la
+                    naturaleza del problema que se está investigando en referencia a literatura ya existente.
+                    <br>
+                    Idealmente, los antecedentes de la investigación deberían indicar la raíz del problema que se está
+                    estudiando. Se
+                    debe proveer un contexto del problema en relación a la teoría, investigación y/o práctica, y su
+                    importancia.
+                    <br>
+                    Investigador científico observando por el microscopio. Puede que esté buscando la cura de una
+                    enfermedad grave. Esta
+                    es una de las razones de la importancia de la investigacion.
+                    Adicionalmente, los antecedentes deben indicar la magnitud en la cual algunos estudios anteriores
+                    han investigado el
+                    problema de manera exitosa. De esta manera, se puede informar sobre las áreas en las cuales existen
+                    huecos y en las
+                    cuales el estudio actual quiere concentrarse.
+                    <br>
+                    Los antecedentes deberían expandirse en los puntos claves declarados al principio de la
+                    introducción, sin embargo no
+                    deben ser el enfoque principal del trabajo. Unos buenos antecedentes deberían ayudar al lector a
+                    determinar si el
+                    autor tiene un entendimiento básico del problema de investigación que está investigando.
+                    <br>
+                    Esta información crucial debería otorgarle al lector el suficiente contexto esencial necesario para
+                    entender el
+                    problema de investigación y su importancia. También promueve la confianza en la calidad general del
+                    análisis y en
+                    los resultados del autor.
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/MI1.png" alt="Metodología de la investigación" width="50%">
+                </div>
+            </section>
+            <hr>
+            <section>
+                <h3>Tema: Utilidad y características de la metodología de investigación</h3>
+                <p>
+                    El método es un procedimiento cuyo origen se remonta a la antigüedad. Los grandes filósofos de la
+                    antigua Grecia ya utilizaban diversos métodos. A Sócrates se le atribuye el método deductivo y el
+                    método que lleva su nombre (Método Socrático). Pero ¿por qué se emplea un método? Simplemente porque
+                    permite hacer las cosas de manera racional y eficiente, es decir, ayuda a lograr las metas y
+                    objetivos con menos esfuerzo, empleando la menor cantidad de tiempo y recursos.
+                    <br>
+                    La aplicación de un método ordena y orienta la ejecución de cualquier actividad. Así mismo, implica
+                    una planificación que impide obrar de manera azarosa e improvisada. En consecuencia, los métodos se
+                    aplican en diversas esferas de la vida humana: existen métodos de trabajo, de enseñanza, métodos
+                    terapéuticos y los métodos de investigación, en los cuales se enfoca el presente este artículo. En
+                    tal sentido, el método es entendido como un camino o serie de pasos que conducen a un fin: en este
+                    caso, la búsqueda de la verdad y la producción de nuevos conocimientos.
+                    <br>
+                    Con el avance de la ciencia se han diseñado métodos sistemáticos dirigidos a la obtención y
+                    verificación de conocimientos, conformando una disciplina denominada Metodología de la
+                    Investigación, necesaria y de gran importancia para la formación de futuros profesionales quienes
+                    tienen la necesidad de obtener y aplicar conocimientos relacionados con su especialidad.
+                    <br>
+                </p>
+            </section>
+        </div>
+        <div *ngSwitchCase="'ma'" class="animated fadeIn">
+            <h2>Archivos de ayuda</h2>
+            <ul>
+                <li><a mat-button [routerLink]="['/visor/LibroM']">Metodología de la investigación</a></li>
+            </ul>
+            <h2>Videos de ayuda</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rnGNIRHdCKs" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1Lqqs9o2QoU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Wuuil2vx7hw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+            </div>
+        </div>
+        <div *ngSwitchCase="'ref'" class="animated fadeIn reference">
+            <ul style="margin-top: 3%;">
+                <li>
+                    Investigación científica y tipo de investigación
+                    <br>
+                    <a
+                        href="https://investigacioncientifica.org/tipos-investigacion-cientifica/">https://investigacioncientifica.org/tipos-investigacion-cientifica/</a>
+                </li>
+                <li>
+                    Investigación en méxico y su evolución social
+                    <br>
+                    <a
+                        href="https://www.lifeder.com/investigacion-mexico-evolucion-social/">https://www.lifeder.com/investigacion-mexico-evolucion-social/</a>
+                </li>
+                <li>
+                    Elementos tipos y características del conocimiento
+                    <br>
+                    <a
+                        href="https://sites.google.com/site/metodologiadelainv631/home/elementos-del-conocimiento">https://sites.google.com/site/metodologiadelainv631/home/elementos-del-conocimiento</a>
+                    <br>
+                    <a
+                        href="https://www.significados.com/tipos-de-conocimiento/">https://www.significados.com/tipos-de-conocimiento/</a>
+                </li>
+                <li>
+                    Modelos y metodos de investigacion
+                    <br>
+                    <a
+                        href="https://www.questionpro.com/blog/es/modelos-de-investigacion/">https://www.questionpro.com/blog/es/modelos-de-investigacion/</a>
+                    <br>
+                    <a
+                        href="https://www.todamateria.com/metodos-de-investigacion/">https://www.todamateria.com/metodos-de-investigacion/</a>
+                </li>
+                <li>
+                    Caracteristicas del metodo deductivo e inductivo
+                    <br>
+                    <a
+                        href="https://www.diferenciador.com/diferencia-entre-metodo-inductivo-y-deductivo/">https://www.diferenciador.com/diferencia-entre-metodo-inductivo-y-deductivo/</a>
+                    <br>
+                    <a href="https://concepto.de/metodo-deductivo-2/">https://concepto.de/metodo-deductivo-2/</a>
+                    <br>
+                    <a href="https://concepto.de/metodo-inductivo/">https://concepto.de/metodo-inductivo/</a>
+                </li>
+                <li>
+                    Modelos de investigación cualitativa y cuantitativa.
+                    <br>
+                    <a
+                        href="https://www.typeform.com/es/encuestas/investigacion-cualitativa-o-cuantitativa/">https://www.typeform.com/es/encuestas/investigacion-cualitativa-o-cuantitativa/</a>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngSwitchDefault>Contenido no encontrado</div>
+    </div>
+</div>

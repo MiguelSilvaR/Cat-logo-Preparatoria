@@ -1,0 +1,207 @@
+<div class="materia">
+    <mat-toolbar>
+        <a mat-button [routerLink]="['/matematicas-I/1']" routerLinkActive="active">Bloque 1</a>
+        <a mat-button [routerLink]="['/matematicas-I/ma']" routerLinkActive="active">Materiales de
+            apoyo</a>
+        <a mat-button [routerLink]="['/matematicas-I/ref']" routerLinkActive="active">Referencias</a>
+    </mat-toolbar>
+
+    <div class="" [ngSwitch]="seccion$ | async">
+        <div *ngSwitchCase="1" class="animated fadeIn">
+            <h2>Números y operaciones aritméticas</h2>
+            <section>
+                <h3>Tema: operaciones con los números reales</h3>
+                <p>
+                    Los números reales son el conjunto que incluye los números naturales, enteros, racionales e
+                    irracionales. Se representa con la letra ℜ.
+                    <br>
+                    La palabra real se usa para distinguir estos números del número imaginario i, que es igual a la raíz
+                    cuadrada de -1, o √-1.
+                    <br>
+                    Para definir la suma de números enteros se necesita conocer el valor absoluto de un número entero x,
+                    que se denota por |x|. El valor absoluto de un número positivo es el mismo número positivo, por
+                    ejemplo: |+7| = | 7| = 7. El valor absoluto de un número negativo es su opuesto, por ejemplo: | – 4
+                    | = –(– 4)= 4 y el valor absoluto de cero es cero. Para sumar dos números enteros del mismo signo,
+                    se suman sus valores absolutos y se deja el mismo signo.
+                    <br>
+                    Para sumar dos números enteros de signos contrarios, se restan sus valores absolutos y se deja el
+                    signo del número que presente mayor valor absoluto.
+                    <br>
+                    Para multiplicar dos números enteros, se multiplican sus valores absolutos, aplicando la
+                    multiplicación de los números naturales, y se aplica las siguientes reglas para el signo.
+                    <br>
+                    <span>Leyes de los signos</span>
+                    <br>
+                    La Ley de los Signos es la ley que establece cómo se comportan los signos de los números en el
+                    momento de las operaciones matemáticas. Si esta ley se aplica correctamente, se garantiza un
+                    resultado correcto en cualquier suma, resta, multiplicación y división que se realice.
+                    <br>
+                    A dicha ley le concierne el sentido que tendrían los números en una recta numérica, y utiliza los
+                    signos “+” y “-”, siendo el signo “+” nombrado como “más” y correspondiendo a los números positivos;
+                    y el signo “-“, de nombre “menos”, correspondiente a los números negativos.
+                    <br>
+                    (+) x (+) = (+) El resultado de multiplicar dos números positivos es un número positivo.
+                    <br>
+                    (+) x (–) = (–) El resultado de multiplicar un número positivo por otro negativo es un número
+                    negativo.
+                    <br>
+                    (–) x (+) = (–) El resultado de multiplicar un número negativo por otro positivo es un número
+                    negativo.
+                    <br>
+                    (–) x (–) = (+) El resultado de multiplicar dos números negativos es un número positivo.
+                    <br>
+                    Además de tener leyes de los signos, también es necesario tomar en cuenta las leyes de los
+                    exponentes
+                    <br>
+                    <span>Leyes de los exponentes</span>
+                    <br>
+                    Las leyes de los exponentes son las reglas a seguir para realizar operaciones con potencias. La
+                    potencia de un número es el resultado de multiplicar ese número por sí mismo más de una vez. Al
+                    número se le llama base, y las veces que se multiplica es el exponente, que se coloca en pequeño
+                    arriba y a la derecha de la base.
+                    <br>
+                    a<sup>n</sup> = base<sup>exponente</sup>
+                    <br>
+                </p>
+
+                <div class="img-container">
+                    <img src="assets/img/M1.png" alt="Ley de los exponentes">
+                </div>
+                <p>
+                    <span>jerarquia de operaciones</span>
+                    <br>
+                    En matemáticas, la jerarquía de operaciones se refiere al orden en que se deben realizar las
+                    operaciones matemáticas. Imaginemos la siguiente situación:
+                    <br>
+                    2 + 3 x 4 - 5 ÷ 5
+                    <br>
+                    Podríamos hacer el siguiente cálculo:
+                </p>
+                <ul>
+                    <li>
+                        primero sumamos 2 + 3, luego multiplicamos por 4, a eso le restamos 5, y finalmente dividimos
+                        por 5.
+                    </li>
+                    <li>
+                        O podríamos sumar 2 más 3, restar 4 y 5, multiplicar eso resultado y dividir al final por 5.
+                    </li>
+                </ul>
+                <p>
+                    En cualquiera de los dos casos, el resultado es diferente. Por eso, existen unas reglas o
+                    instrucciones que se deben seguir para que una serie de operaciones matemáticas siempre sea resuelta
+                    de la misma forma. De esta forma, en la expresión 2 + 3 x 4 -5 ÷ 5 el resultado correcto es 13
+                    porque:
+                </p>
+                <ul>
+                    <li>
+                        primero se realizan las multiplicaciones/ divisiones: 3 x 4 = 12, 5 ÷ 5 =1
+                    </li>
+                    <li>
+                        luego se realizan las sumas y restas en el sentido de izquierda a derecha:
+                        2 + 12 = 14, 14 - 1 = 13.
+                    </li>
+                </ul>
+                <div class="img-container">
+                    <img src="assets/img/M2.png" alt="Ley de los exponentes">
+                </div>
+            </section>
+            <hr>
+            <section>
+                <h3>Tema: Mínimo común múltiplo y maximo común divisor</h3>
+                <p>
+                    1.- Mínimo común múltiplo
+                    <br>
+                    Los múltiplos de un número se obtienen multiplicando el número por 1, 2, 3, 4...
+                    <br>
+                    Por ejemplo: los múltiplos de 4 son: 4, 8, 12, 16, 20, 24, 28...
+                    <br>
+                    El Mínimo Común Múltiplo (MCM) de 2 o más número es el menor de lo múltiplos comunes a estos
+                    números:
+                    <br>
+                    Por ejemplo: vamos a calcular el MCM de 3 y 4:
+                    <br>
+                    Múltiplos de 3: 3, 6, 9, 12, 15, 18, 21, 24...
+                    <br>
+                    Múltiplos de 4: 4, 8, 12, 16, 20, 24, 28...
+                    <br>
+                    Vemos que 12 es un múltiplo de ambos números y es el menor de los múltiplos comunes. Por lo tanto 12
+                    es el Mínimo Común Múltiplo.
+                    <br>
+
+                    2.- Máximo común divisor
+                    <br>
+                    Los divisores de un número son aquellos que al dividir el número el resto es 0.
+                    <br>
+                    Por ejemplo: Divisores de 24 son: 1, 2, 3, 4, 6, 12 y 24.
+                    <br>
+                    Si se divide 24 por cualquiera de ellos el resto es 0.
+                    <br>
+                    El Máximo Común Divisor (MCD) de 2 o más número es el mayor de los divisores comunes a estos
+                    números:
+                    <br>
+                    Por ejemplo: vamos a calcular el MCD de 30 y 42:
+                    <br>
+                    Divisores de 30: 1, 2, 3, 5, 6, 10, 15 y 30.
+                    <br>
+                    Divisores de 42: 1, 2, 3, 6, 7, 21 y 42.
+                    <br>
+                    Vemos que 6 es un divisor común a ambos números y es el mayor de los divisores comunes. Por lo tanto
+                    6 es el Máximo Común Divisor.
+                    <br>
+
+                </p>
+            </section>
+        </div>
+        <div *ngSwitchCase="'ma'" class="animated fadeIn">
+            <h2>Videos de ayuda</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MsVfXEtD9Cw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2AFZpUbGulk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SDxP8TZMFnw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FIjylOufxyU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZC15RlQw0qE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div *ngSwitchCase="'ref'" class="animated fadeIn reference">
+            <ul style="margin-top: 3%;">
+                <li>
+                    <a href="https://www.aulafacil.com/cursos/matematicas-primaria/matematicas-sexto-primaria-11-anos/minimo-comun-multiplo-y-maximo-comun-divisor-l7446">https://www.aulafacil.com/cursos/matematicas-primaria/matematicas-sexto-primaria-11-anos/minimo-comun-multiplo-y-maximo-comun-divisor-l7446</a>
+                </li>
+                <li>
+                    <a href="https://www.todamateria.com/jerarquia-de-operaciones/">https://www.todamateria.com/jerarquia-de-operaciones/</a>
+                </li>
+                <li>
+                    <a href="https://www.todamateria.com/leyes-de-los-exponentes/">https://www.todamateria.com/leyes-de-los-exponentes/</a>
+                </li>
+                <li>
+                    <a href="https://www.lifeder.com/clasificacion-numeros-reales/">https://www.lifeder.com/clasificacion-numeros-reales/</a>
+                </li>
+                <li>
+                    <a href="https://www.todamateria.com/numeros-reales/">https://www.todamateria.com/numeros-reales/</a>
+                </li>
+                <li>
+                    <a href="http://proyectos.javerianacali.edu.co/cursos_virtuales/pregrado/matematicas_fundamentales/NumerosReales/Cap2/">http://proyectos.javerianacali.edu.co/cursos_virtuales/pregrado/matematicas_fundamentales/NumerosReales/Cap2/</a>
+                </li>
+                <li>
+                    <a href="https://www.ejemplode.com/5-matematicas/4116-ejemplo_de_ley_de_los_signos.html">https://www.ejemplode.com/5-matematicas/4116-ejemplo_de_ley_de_los_signos.html</a>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngSwitchDefault>Contenido no encontrado</div>
+    </div>
+</div>

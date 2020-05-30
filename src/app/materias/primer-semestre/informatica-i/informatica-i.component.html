@@ -1,0 +1,252 @@
+<div class="materia">
+    <mat-toolbar>
+        <a mat-button [routerLink]="['/informatica-I/1']" routerLinkActive="active">Bloque 1</a>
+        <a mat-button [routerLink]="['/informatica-I/ma']" routerLinkActive="active">Materiales de
+            apoyo</a>
+        <a mat-button [routerLink]="['/informatica-I/ref']" routerLinkActive="active">Referencias</a>
+    </mat-toolbar>
+
+    <div class="" [ngSwitch]="seccion$ | async">
+        <div *ngSwitchCase="1" class="animated fadeIn">
+            <h2>Conceptos básico de informática y ciudadanía digital.</h2>
+            <section>
+                <h3>Tema: Conceptos básico de la informática</h3>
+                <p>
+                    Para comenzar con este tema, vamos a definir el concepto de informática:
+                    La informática es la ciencia que se ocupa del tratamiento de la información usando equipos
+                    electrónicos
+                    llamados computadores.
+                    <br>
+                    La informática se puede entender como la ciencia de tratar la información de manera automática
+                    mediante
+                    máquinas electrónicas, a esto se le conoce por el nombre de procesamiento de datos.
+                    <br>
+
+                    Algunos de los conceptos básicos para comenzar a comprender la informática son:
+                    <br>
+
+                    <span>Hardware</span>
+                    <br>
+                    Es un concepto que es usado para referirse los componentes tangibles que cumplen con la función de
+                    almacenamiento y procesamiento de información dentro y fuera de la computadora.
+                    <br>
+                    Estos se clasifican en tres:
+                    <br>
+                    De entrada, que son los que permiten que la información entre al computador
+                    <br>
+                    &nbsp;Ej: Teclado, micrófono, scanner, etc
+                    <br>
+
+                    De almacenamiento, que como dice su nombre guardan la información y la almacenan.
+                    <br>
+                    &nbsp;Ej: Disco duro, Cd, disquetes, etc.
+                    <br>
+
+                    De salida, que son los dispositivos permiten la posibilidad de comunicación del ordenador al
+                    usuario, es
+                    decir, los que muestran la información
+                    <br>
+                    &nbsp;Ej: Monitor, impresoras, etc.
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/I1.png" alt="">
+                </div>
+                <p>
+                    <span>Software</span>
+                    Por otro lado, el software es un sistema o programa que se ejecuta en una computadora u ordenador,
+                    es la estructura que soporta y maneja todos los programas y partes de tu computador.
+                    Ej: Microsoft Office (Word, Excel, PowerPoint, Outlook)
+                </p>
+                <ul>
+                    <li>Adobe Reader.</li>
+                    <li>Adobe Photoshop.</li>
+                    <li>Google chrome</li>
+                    <li>etc.</li>
+                </ul>
+                <div class="img-container">
+                    <img src="assets/img/I2.png" alt="">
+                </div>
+                <p>
+                    <span>Internet</span>
+                    <br>
+                    Internet es una red de computadoras que se encuentran interconectadas a nivel mundial para compartir
+                    información. Se trata de una red de equipos que se relacionan entre sí a través de la utilización de
+                    un lenguaje universal.
+                    <br>
+                    El concepto Internet tiene sus raíces en el idioma inglés y se encuentra conformado por el vocablo
+                    inter (que significa entre) y net (proveniente de network que quiere decir red electrónica).
+                    <br>
+                    Para acceder a los billones de sitios web disponibles en la gran red de redes, que conocemos como la
+                    Internet, se utilizan los navegadores web (software), siendo algunos de los más utilizados Google
+                    Chrome, Internet Explorer, Mozilla Firefox, y Safari, todos desarrollados por distintas compañías
+                    tecnológicas.
+                    <br>
+                    Internet nos abre las puertas a miles y miles de distintos servicios, entre ellos nos permitirá:
+                </p>
+                <ul>
+                    <li>Buscar cualquier tipo de información que necesite (por ejemplo en Google).</li>
+                    <li>Comprar productos de diversa índole (por ejemplo en Amazon o Mercado Libre).</li>
+                    <li>Comunicarnos con familiares o amigos que estén en otros países o ciudades mediante una video
+                        llamada
+                        (por ejemplo de Skype o Whatsapp).</li>
+                    <li>Jugar juegos online (como el League of Legends) con personas de distintas nacionalidades y
+                        edades,
+                        en tiempo real.</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h3>Tema: Ciudadanía y seguridad digital.</h3>
+                <p>
+                    <span>Ciudadanía digital</span>
+                    <br>
+                    La ciudadanía digital se define como la aplicación de conductas pertinentes en el uso de internet,
+                    redes sociales y tecnologías disponibles y nació con la intención de educar y sensibilizar a los
+                    usuarios de internet, al darles herramientas que les permitan reconocer fuentes relevantes y
+                    confiables, así como comunicarse de manera efectiva a través de los canales digitales.
+                    <br>
+                    Dentro de la ciudadanía digital encontramos conceptos igual de importantes que garantizan el
+                    bienestar y seguro de todos los usuarios conectados a la red de internet.
+                    <br>
+                    <span>Seguridad digital</span>
+                    <br>
+                    La seguridad informática o digital, también conocida como ciberseguridad o seguridad de tecnologías
+                    de la información, es el área relacionada con la informática y la telemática que se enfoca en la
+                    protección de la infraestructura computacional y todo lo relacionado con esta y, especialmente, la
+                    información contenida en una computadora o circulante a través de las redes de computadoras.
+                    <br>
+                    La ciudadanía digital puede aplicarse a dos áreas distintas de la vida:
+                    <br>
+
+                </p>
+                <ul>
+                    <li>
+                        La educación digital, mediante el uso de Internet y las TIC (tecnologías de la información y
+                        comunicación) para la alfabetización digital y el desarrollo de las competencias digitales, para
+                        reducir la brecha entre los distintos ciudadanos de una nación.
+                    </li>
+                    <li>
+                        Participación digital, que es la facilitación de los trámites burocráticos, políticos, sociales
+                        o legales del Estado, empleando para ello la capacidad de las TIC, procurando hacer de ellas un
+                        uso responsable.
+                    </li>
+                </ul>
+                <p>
+                    Así, la ciudadanía digital asume como propios los valores de la democracia, aplicados al ámbito de
+                    las TIC: seguridad, transparencia, ética, legalidad e inclusión.
+                    <br>
+                    También encontramos riesgos y beneficios que trae la ciudadanía digital
+                    <br>
+                    <span>Riesgos de la ciudadanía digital</span>
+                    <br>
+                    El principal riesgo de la ciudadanía digital se debe a las desigualdades en el acceso a Internet
+                    para las distintas comunidades de un mismo país, así como el uso inadecuado de las redes de
+                    internet, dando paso a situaciones como estafas, ciberacoso, cyberbullying, robo de identidad, etc.
+                    Para evitar estos y más riesgos, los ciudadanos internautas, tenemos derechos y obligaciones que nos
+                    permiten tener una mejor experiencia en la internet
+                    <br>
+                    <span>Algunos derechos son:</span>
+                    <br>
+                </p>
+                <ul>
+                    <li>Derecho a expresarnos libremente</li>
+                    <li>Derecho a navegar seguros.</li>
+                    <li>Derechos a ser protegidos por los adultos responsables.</li>
+                    <li>Derecho a ser respetados y a no ser discriminados.</li>
+                    <li>Tienes derecho a acceder a información y a la tecnología.</li>
+                    <li>Tienes derecho a expresarte libremente.</li>
+                    <li>Tienes derecho a dar tu opinión en los temas que te incluyen.</li>
+                    <li>Tienes derecho a ser protegido y no ser discriminado.</li>
+                </ul>
+                <p>
+                    Las posibilidades de la ciudadanía digital son enormes. La rapidez de los trámites, llevados a cabo
+                    sin salir de casa; la posibilidad de participación, realización de denuncias, contacto con
+                    autoridades o incluso el acceso a la educación digital mediante las propias TIC son algunos
+                    ejemplos.
+                    <br>
+                    Es decir que la ciudadanía digital aumenta la comodidad y la mejoría de la calidad de vida de las
+                    personas. Por otro lado, permite la educación a gran escala y la formación de ciudadanos críticos,
+                    conscientes del uso de las TIC y de los riesgos, beneficios y posibilidades de éstas.
+                    <br>
+                    <span>Identidad digital</span>
+                    <br>
+                    Es nuestra identidad personal en el mundo del internet y está formada en base a una serie de rasgos
+                    característicos - nombre y apellidos, fecha de nacimiento, sexo, nivel de estudios, etc.
+                    Algunos de estos rasgos se recogen en nuestro DNI, que es un elemento asociado a nuestra identidad
+                    analógica. En el entorno digital, cada uno de nosotros conserva esos mismos datos identificativos,
+                    pero nuestra identidad 2.0. también se forma en base a todas nuestras acciones en internet.
+                    <br>
+                    <span>¿Cómo proteger nuestra identidad digital?</span>
+                    <br>
+                    El robo de identidades digitales es uno de los ciberdelitos más frecuentes.
+                    Si te roban tu identidad digital, además de que el ciberdelincuente puede acceder a tus cuentas
+                    bancarias o realizar compras en tu nombre, también puede dañar tu reputación en las redes sociales.
+                    Para proteger tu identidad personal en la red, primero debes de ser muy consciente de que el robo de
+                    identidades digitales está a la orden del día. Mañana podría pasarte a ti.
+
+                </p>
+            </section>
+        </div>
+        <div *ngSwitchCase="'ma'" class="animated fadeIn">
+            <h2>Videos de ayuda</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3F-kuNGlNco" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-JVdH8ne-2s" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3YOLcpzx1g8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+            </div>
+        </div>
+        <div *ngSwitchCase="'ref'" class="animated fadeIn reference">
+            <ul style="margin-top: 3%;">
+                <li>
+                    J.R. (S/A). Historia y Desarrollo de la Informática. Mayo 2020, de PlusCultural Sitio web:
+                    <br>
+                    <a href="https://www.pluscultural.com/academico/historia-y-desarrolo-de-la-informatica/">https://www.pluscultural.com/academico/historia-y-desarrolo-de-la-informatica/</a>
+                </li>
+                <li>
+                    J.R . (S/A). Conceptos Básicos de Informática. Mayo 2020, de PlusCultural Sitio web:
+                    <br>
+                    <a href="https://www.pluscultural.com/academico/conceptos-basicos-de-informatica/">https://www.pluscultural.com/academico/conceptos-basicos-de-informatica/</a>
+                </li>
+                <li>
+                    Raffino E. (2020). Concepto de Internet. Mayo 2020, de Concepto.de Sitio web:
+                    <br>
+                    <a href="https://concepto.de/internet/">https://concepto.de/internet/</a> 
+                </li>
+                <li>
+                    idc Online. (2019). ¿Qué es la ciudadanía digital?. Mayo 2020, de idc Online Sitio web:
+                    <br>
+                    <a href="https://idconline.mx/corporativo/2019/01/29/que-es-la-ciudadania-digital">https://idconline.mx/corporativo/2019/01/29/que-es-la-ciudadania-digital</a>
+                </li>
+                <li>
+                    Maradiaga J. (2017). La seguridad digital o informática. Mayo 2020, de La Tribuna Sitio web:
+                    <br>
+                    <a href="https://www.latribuna.hn/2017/08/17/la-seguridad-digital-informatica/">https://www.latribuna.hn/2017/08/17/la-seguridad-digital-informatica/</a> 
+                </li>
+                <li>
+                    Raffino E. (2019). Ciudadanía Digital. Mayo 2020, de Concepto.de Sitio web:
+                    <br>
+                    <a href="https://concepto.de/ciudadania-digital/">https://concepto.de/ciudadania-digital/</a>
+                </li>
+                <li>
+                    Signaturit. (2017). ¿QUÉ ES LA IDENTIDAD DIGITAL Y CÓMO PUEDES PROTEGERLA?. Mayo 2020, de Signaturit
+                    Sitio web:
+                    <br>
+                    <a href="https://blog.signaturit.com/es/que-es-la-identidad-digital">https://blog.signaturit.com/es/que-es-la-identidad-digital</a>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngSwitchDefault>Contenido no encontrado</div>
+    </div>
+
+</div>

@@ -1,0 +1,24 @@
+<h1>Bienvenido, alumno</h1>
+<div class="carrusel">
+    <ngb-carousel #carousel [interval]="7000" [pauseOnHover]="true">
+        <ng-template ngbSlide  *ngFor="let img of images; index as i">
+            <div class="carousel-caption">
+                <h3>Bachillerato José Maria Morelos y Pavon</h3>
+            </div>
+            <div class="picsum-img-wrapper" class="animated fadeIn">
+                <img src="assets/img/{{img}}.jpg" alt="My image {{i + 1}} description">
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>
+<hr>
+<div class="contenedor-texto">
+    <h2>Este es un recopilado ideal para tus tareas</h2>
+    <h3>¿Qué es esto?</h3>
+    <p>Este es un recopilado de información de tus materias que te puede ser útil en trabajos de investigación</p>
+    <h3>¿Cómo se usa?</h3>
+    <p>Para empezar, da click en el botón de menú que se encuentra en la esquina superior izquierda. Posteriormente busca tu
+        semestre y navega entre la información propiciada</p>
+    <h3>¿Es confiable la información?</h3>
+    <p>Claro que sí, es información proveniente de fuentes confiables que tu mismo puedes comprobar</p>
+</div>    

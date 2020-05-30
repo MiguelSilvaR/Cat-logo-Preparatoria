@@ -1,1 +1,90 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+.animated {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+/* Estilos generales */
+
+$fontSize: 17px;
+$interlineado: 30px;
+
+.materia {
+    .active {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    h2 {
+        margin-top: 2%;
+    }
+
+    h3 {
+        font-weight: bold;
+    }
+
+    p,
+    li {
+        text-align: justify;
+        line-height: $interlineado;
+        font-size: $fontSize;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    .video {
+        overflow: scroll;
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+}
+
+.reference {
+    height: 100vh;
+}

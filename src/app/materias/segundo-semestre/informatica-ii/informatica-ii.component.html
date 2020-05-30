@@ -1,0 +1,179 @@
+<div class="materia">
+    <mat-toolbar>
+        <a mat-button [routerLink]="['/informatica-II/1']" routerLinkActive="active">Bloque 1</a>
+        <a mat-button [routerLink]="['/informatica-II/2']" routerLinkActive="active">Bloque 2</a>
+        <a mat-button [routerLink]="['/informatica-II/ma']" routerLinkActive="active">Materiales de
+            apoyo</a>
+        <a mat-button [routerLink]="['/informatica-II/ref']" routerLinkActive="active">Referencias</a>
+    </mat-toolbar>
+
+    <div class="" [ngSwitch]="seccion$ | async">
+        <div *ngSwitchCase="1" class="animated fadeIn">
+            <h2>Bloque 1
+            </h2>
+            <section>
+                <h3>Tema: Software educativo</h3>
+                <p>
+                    Software educativo
+                    <br>
+                    Para que un programa de software educativo sea considerado como tal, este debe de cumplir una serie
+                    de características. Entre los principales requisitos se encuentran que este debe ser usado
+                    específicamente por educadores y alumnos. No obstante, existen otras muchas características entre
+                    las que se encuentran:
+                    <br>
+                    Posibilidad de ser usado en cualquier materia o ámbito de la educación.
+                    <br>
+                    Se trata de una herramienta interactiva.
+                    <br>
+                    Tienen la capacidad de adaptarse a las necesidades de los alumnos y las características de estos.
+                    Incluyendo la edad, el curso escolar o las capacidades individuales de estos.
+                    Son fáciles de usar. Tanto educadores como alumnos deben de ser capaces de instalar, entender y
+                    ejecutar el programa sin ningún tipo de problema.
+                    Según la finalidad del software educativo, este puede tener una naturaleza más directiva o, por el
+                    contrario, más constructivista, en el que el alumno crea sus propias conclusiones o conocimientos.
+                    <br>
+                    1. Resolución de problemas
+                    <br>
+                    La primera categoría hace referencia a los programas especialmente creados para fomentar la
+                    capacidad de resolución de problemas. Para ello el alumno deberá seguir una serie de secuencias o
+                    realizar cierta clase de ejercicios que le proporcionan las herramientas necesarias para la
+                    resolución de un enigma.
+                    A lo largo de este proceso, el alumno deberá elaborar hipótesis, conjeturas o supuestos que tendrá
+                    que comprobar para así resolver el enigma o conflicto planteado.
+                    <br>
+                    2. Ejercicio y práctica
+                    <br>
+                    En los softwares educativos de ejercicio y prácticas, se le presenta al alumno una serie de
+                    ejercicios o tareas en los que, tras su realización, se proporciona una retroalimentación acerca de
+                    cómo se ha realizado la ejecución por parte de la persona.
+                    Mediante estos ejercicios, que pueden tener forma de tests o cuestionarios, el alumno puede poner en
+                    práctica los conocimientos adquiridos con anterioridad.
+                    <br>
+                    3. Simulación
+                    <br>
+                    Estos programas ofrecen la posibilidad de recrear entornos o situaciones en las que el alumno puede
+                    interaccionar y que no son posibles recrear en el contexto académico o hacerlo supondría un coste
+                    demasiado elevado.
+                    <br>
+                    4. Tutorial
+                    <br>
+                    En los softwares de tipo tutorial, el objetivo es la transmisión de conocimientos entre el programa,
+                    que actúa como educador, y el alumno. Mediante una serie de pautas parecidas a las de un profesor
+                    que se encuentra en clase, el programa ofrece una serie de explicaciones, ejercicios prácticos y
+                    retroalimentación de la ejecución del alumno.
+                    <br>
+                    5. Juego
+                    <br>
+                    En los juegos instruccionales, el objetivo es incrementar la motivación del alumnos mediante la
+                    implementación de pruebas con recompensas. Con ellos se puede mantener la atención y aumentar el
+                    interés por la materia.
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/INII1.png" alt="SOWFTWARE">
+                </div>
+            </section>
+            <hr>
+        </div>
+        <div *ngSwitchCase="2" class="animated fadeIn">
+            <h2>Bloque 2
+            </h2>
+            <section>
+                <h3>Tema: Algoritmos</h3>
+                <p>
+                    Algoritmos y diagrama de flujos
+                    <br>
+                    ♦ Un algoritmo debe resolver el problema para el que fue formulado.
+                    <br>
+                    Lógicamente no sirve un algoritmo que no resuelve ese problema. En el caso de los programadores, a
+                    veces crean algoritmos que resuelven problemas diferentes al planteado. Los algoritmos deben mostrar
+                    claramente cuáles son los datos iniciales y cuáles son los resultados.
+                    <br>
+                    ♦ Los algoritmos son independientes del computador. Los algoritmos se escriben para poder ser
+                    utilizados en cualquier máquina.
+                    <br>
+                    ♦ Los algoritmos deben de ser precisos. Los resultados de los cálculos deben de ser exactos, de
+                    manera rigurosa. No es válido un algoritmo que sólo aproxime la solución. Debe constar de pasos
+                    claros, precisos y no ambiguos.
+                    <br>
+                    ♦ Los algoritmos deben de ser finitos. Deben alcanzar la solución correcta en un tiempo finito. No
+                    es un algoritmo válido aquel que produce situaciones en las que el algoritmo no termina.
+                    <br>
+                    ♦ Los algoritmos deben de poder repetirse. Deben de permitir su ejecución las veces que sea
+                    necesario. No son válidos los que tras ejecutarse una vez, ya no pueden volver a hacerlo por la
+                    razón que sea. Debe tener la capacidad de resolver el problema aun cuando cambiemos los datos de
+                    entrada.
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/INII2.png" alt="SOWFTWARE">
+                </div>
+                <p>
+                    CARACTERÍSTICAS ACONSEJABLES PARA LOS ALGORITMOS
+                    <br>
+                    ♦ Validez. Un algoritmo es válido si carece de errores. Un algoritmo puede resolver el problema para
+                    el que se planteó y sin embargo no ser válido debido a que posee errores.
+                    <br>
+                    ♦ Eficiencia. Un algoritmo es eficiente si obtiene la solución al problema en poco tiempo. No lo es
+                    si es lento en obtener el resultado.
+                    <br>
+                    ♦ Óptimo. Un algoritmo es óptimo si es el más eficiente posible y no contiene errores. La búsqueda
+                    de este algoritmo es el objetivo prioritario del programador. No siempre podemos garantizar que el
+                    algoritmo hallado es el óptimo, a veces sí.
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/INII3.png" alt="SOWFTWARE">
+                </div>
+            </section>
+            <hr>
+        </div>
+        <div *ngSwitchCase="'ma'" class="animated fadeIn">
+            <h2>Quizlet</h2>
+            <p>Haz click en las tarjetas para ver la definición correspondiente</p>
+            <iframe src="https://quizlet.com/220858739/match/embed?x=1jj1" height="500" width="100%"
+                style="border:0"></iframe>
+            <h2>Videos de ayuda</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/U3CGMyjzlvM" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Tu9OQSff-gw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SZTXmCbfjP0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+            </div>
+        </div>
+        <div *ngSwitchCase="'ref'" class="animated fadeIn reference">
+            <ul style="margin-top: 3%;">
+                <li>
+                    ¿Qué es un algoritmo?
+                    <br>
+                    <a href="https://retina.elpais.com/retina/2018/03/22/tendencias/1521745909_941081.html">https://retina.elpais.com/retina/2018/03/22/tendencias/1521745909_941081.html</a>
+                </li>
+                <li>
+                    Algoritmo
+                    <br>
+                    <a href="https://www.ecured.cu/Algoritmo">https://www.ecured.cu/Algoritmo</a>
+                </li>
+                <li>
+                    Diagrama de flujo
+                    <br>
+                    <a href="https://concepto.de/diagrama-de-flujo/">https://concepto.de/diagrama-de-flujo/</a>
+                </li>
+                <li>
+                    Software educativo
+                    <br>
+                    <a href="https://www.significados.com/software-educativo/">https://www.significados.com/software-educativo/</a>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngSwitchDefault>Contenido no encontrado</div>
+    </div>
+</div>

@@ -1,0 +1,177 @@
+<div class="materia">
+    <mat-toolbar>
+        <a mat-button [routerLink]="['/sociales/1']" routerLinkActive="active">Bloque 1</a>
+        <a mat-button [routerLink]="['/sociales/2']" routerLinkActive="active">Bloque 2</a>
+        <a mat-button [routerLink]="['/sociales/ma']" routerLinkActive="active">Materiales de
+            apoyo</a>
+        <a mat-button [routerLink]="['/sociales/ref']" routerLinkActive="active">Referencias</a>
+    </mat-toolbar>
+
+    <div class="" [ngSwitch]="seccion$ | async">
+        <div *ngSwitchCase="1" class="animated fadeIn">
+            <h2>Introducción a la metodología de investigación
+            </h2>
+            <section>
+                <h3>Tema: Concepto del ser social y del ser individual</h3>
+                <div class="img-container">
+                    <img src="assets/img/S1.png" alt="Ser indiviadual y la sociedad">
+                </div>
+                <div class="img-container">
+                    <img src="assets/img/S2.png" alt="Ser indiviadual y la sociedad">
+                </div>
+            </section>
+            <hr>
+        </div>
+        <div *ngSwitchCase="2" class="animated fadeIn">
+            <h2>Introducción a la metodología de investigación
+            </h2>
+            <section>
+                <h3>Tema: Tipos de conocimiento</h3>
+                <div class="img-container">
+                    <img src="assets/img/S3.png" alt="Ser indiviadual y la sociedad">
+                </div>
+                <p>
+                    1. Conocimiento filosófico
+                    <br>
+                    En este caso se parte de la introspección y la reflexión sobre la realidad y las circunstancias que
+                    nos rodean a nosotros y al mundo, en ocasiones basándose en la experiencia a dada por observaciones
+                    directas de fenómenos naturales o sociales. Así pues, se parte de la observación y la reflexión sin
+                    llegar a la experimentación, y de este conocimiento surgen diversas metodologías y técnicas que
+                    permiten que con el tiempo la especulación se convierta en conocimiento científico.
+                    <br>
+                    2. Conocimiento empírico
+                    <br>
+                    El empírico es uno de los tipos de conocimiento basados en lo directamente observable. Se considera
+                    conocimiento empírico a todo aquel que se aprende en el medio mediante la experiencia personal. Se
+                    basa en la observación sin considerar emplear un método para investigar los fenómenos ni su nivel de
+                    generalización.
+                    <br>
+
+                    3. Conocimiento científico
+                    <br>
+                    Semejante al conocimiento empírico en el sentido de que parte de la observación de la realidad y se
+                    basa en fenómenos demostrables, en esta ocasión estamos ante uno de los tipos de conocimiento en los
+                    que se realiza un análisis crítico de la realidad a partir de la comprobación (experimental o no)
+                    para poder originar conclusiones válidas. El conocimiento científico permite la crítica y la
+                    modificación de sus conclusiones y premisas básicas.
+                    <br>
+                    4. Conocimiento intuitivo
+                    <br>
+                    El conocimiento intuitivo es un tipo de conocimiento en el que la relación entre los fenómenos o
+                    informaciones se llevan a cabo a través de un proceso subconsciente, sin que exista información
+                    objetiva suficiente a un nivel observable como para elaborar dicho conocimiento y sin que sea
+                    necesario una comprobación directa de su veracidad. Se vincula a la experiencia y a la asociación de
+                    ideas y de sensaciones.
+                    <br>
+                    5. Conocimiento religioso o revelado
+                    <br>
+                    Se trata de un tipo de conocimiento derivado de la fe y las creencias de las personas. Los datos
+                    reflejados y considerados verdaderos por este tipo de conocimiento no pueden ser demostrados ni
+                    falseados a partir de lo observable, siendo inferidos a partir de la interiorización de varios
+                    dogmas religiosos.
+                    <br>
+                    6. Conocimiento declarativo
+                    <br>
+                    Por conocimiento declarativo entendemos aquél en que somos capaces de conocer información teórica
+                    sobre las cosas, siendo totalmente conscientes de dichos conocimientos y estableciéndose en forma de
+                    idea o proposición. Dichas ideas pueden o no ser verificadas posteriormente. Permite la abstracción
+                    y la reflexión sobre la información, así como su elaboración.
+                    <br>
+                    7. Conocimiento procedimental
+                    <br>
+                    Este tipo de conocimiento, llamado a veces conocimiento tácito, se aplica a la gestión de problemas
+                    nuevos en un ámbito personal o profesional en el que se ha adquirido mucha experiencia y soltura.
+                    Además, aquello que se aprende no puede ser expresado verbalmente, sino que tiene que ver con
+                    movimientos realizados en un tiempo y un espacio determinados.
+                    <br>
+                    8. Conocimiento directo
+                    <br>
+                    Se basa en la experimentación directa con el objeto de conocimiento, obteniendo información de
+                    primera mano respecto a dicho objeto. Por ello, no se depende de la interpretación de otras
+                    personas.
+                    <br>
+                    9. Conocimiento indirecto o vicario
+                    <br>
+                    En el conocimiento indirecto aprendemos sobre algo a partir de otras informaciones sin por ello
+                    experimentar con el objeto de estudio de forma directa. Por ejemplo, cuando estudiamos un libro de
+                    texto estamos obteniendo conocimiento indirecto sobre el tema en cuestión.
+                    <br>
+                    10. Conocimiento lógico
+                    <br>
+                    Este tipo de conocimiento se basa en la derivación de conclusiones coherentes con las premisas de
+                    las que se parte. Es información que sigue las reglas del razonamiento deductivo y cuyo proceso
+                    puede ser resumido a través de silogismos. Por ejemplo: si llueve, el suelo se muja; ha llovido, así
+                    que el suelo se ha mojado.
+                    <br>
+                    11. Conocimiento matemático
+                    <br>
+                    Este es otro de los tipos de conocimiento que más se relaciona con la lógica, pero no es exactamente
+                    como el anterior. En este caso, el contenido de las proposiciones con las que se trabaja para
+                    extraer información se basa exclusivamente en números y en operaciones matemáticas. Por eso, no se
+                    refiere directamente a elementos materiales, sino a relaciones entre números, algo que tiene que ver
+                    con un tipo de razonamiento más abstracto.
+                    <br>
+                    12. Conocimiento de sistemas
+                    <br>
+                    Este tipo de conocimiento hace referencia a la capacidad de generar sistemas a partir de elementos
+                    individuales que pueden ser combinados entre sí. Es un ámbito técnico relacionado con las
+                    matemáticas y usado habitualmente en programación y oficios como la arquitectura o la sociología.
+                    <br>
+                    13. Conocimiento privado
+                    <br>
+                    Se fundamenta en experiencias personales de tipo autobiográfico, y en sí mismas no están disponibles
+                    para un gran grupo de personas.
+                    <br>
+                    14. Conocimiento público
+                    <br>
+                    Forma parte de la cultura popular y sus contenidos han sido difundidos a través de muchos grupos y
+                    capas de la sociedad.
+                    <br>
+
+                </p>
+            </section>
+            <hr>
+        </div>
+        <div *ngSwitchCase="'ma'" class="animated fadeIn">
+            <h2>Videos de ayuda</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ASP2CxH8_pA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fIsaQzdSPf0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+            </div>
+        </div>
+        <div *ngSwitchCase="'ref'" class="animated fadeIn reference">
+            <ul style="margin-top: 3%;">
+                <li>
+                    Sujeto social
+                    <br>
+                    <a href="https://definicion.de/sujeto-social/">https://definicion.de/sujeto-social/</a>
+                </li>
+                <li>
+                    Ser social y ser individual
+                    <br>
+                    <a
+                        href="https://infogram.com/el-ser-social-y-el-ser-individual-emilio-bennetts-palacio-1hkv2njrpgnn6x3">https://infogram.com/el-ser-social-y-el-ser-individual-emilio-bennetts-palacio-1hkv2njrpgnn6x3</a>
+                </li>
+                <li>
+                    Tipo de conocimiento
+                    <br>
+                    <a
+                        href="https://psicologiaymente.com/miscelanea/tipos-de-conocimiento">https://psicologiaymente.com/miscelanea/tipos-de-conocimiento</a>
+                </li>
+                <li>
+                    ¿Qué son las ciencias sociales?
+                    <br>
+                    <a href="https://concepto.de/ciencias-sociales/">https://concepto.de/ciencias-sociales/</a>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngSwitchDefault>Contenido no encontrado</div>
+    </div>
+</div>

@@ -1,0 +1,216 @@
+<div class="materia">
+    <mat-toolbar>
+        <a mat-button [routerLink]="['/quimica-I/1']" routerLinkActive="active">Bloque 1</a>
+        <a mat-button [routerLink]="['/quimica-I/ma']" routerLinkActive="active">Materiales de
+            apoyo</a>
+        <a mat-button [routerLink]="['/quimica-I/ref']" routerLinkActive="active">Referencias</a>
+    </mat-toolbar>
+
+    <div class="" [ngSwitch]="seccion$ | async">
+        <div *ngSwitchCase="1" class="animated fadeIn">
+            <h2>Bloque 1
+            </h2>
+            <section>
+                <h3>
+                    Tema: Concepto de Química
+                </h3>
+                <p>
+                    La química es la ciencia que estudia la composición, estructura y propiedades de la materia,
+                    incluyendo su relación con la energía y también los cambios que pueden darse en ella a través de las
+                    llamadas reacciones. Es decir, la química es la ciencia que estudia las sustancias y las partículas
+                    que las componen, así como las distintas dinámicas que entre éstas pueden darse.
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/Q1.png" alt="Química" width="50%">
+                </div>
+                <p>
+                    La química es una de las grandes ciencias contemporáneas, cuya aparición revolucionó el mundo para
+                    siempre y nos otorgó un conocimiento nunca antes visto del modo en que opera la materia. Así, esta
+                    ciencia ha ofrecido explicaciones funcionales y comprobables para la compleja conducta de los
+                    materiales conocidos, capaces de explicar tanto su permanencia como sus cambios.
+                    <br>
+                    Por otro lado, los conocimientos químicos están presentes en la vida cotidiana, en la medida en que
+                    empleamos sustancias naturales y creamos otras artificiales. Procesos como la cocción, la
+                    fermentación, la metalurgia, la creación de materiales inteligentes e incluso muchos de los procesos
+                    que tienen lugar en nuestros cuerpos, pueden ser explicados a través de una perspectiva química (o
+                    bioquímica).
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/Q2.png" alt="Química" width="50%">
+                </div>
+                <p>
+                    Por otro lado, el dominio de la química permitió el surgimiento de la industria: la transformación
+                    de materiales a voluntad para crear objetos útiles (o los materiales necesarios para fabricarlos).
+                    En ese sentido, se trata de una de las ciencias que mayor impacto han tenido en el mundo y en la
+                    historia de la humanidad.
+                </p>
+            </section>
+            <hr>
+            <section>
+                <h3>
+                    Tema: Historia de la química
+                </h3>
+                <p>
+                    En un sentido estricto, la historia de la química comenzó en la prehistoria cuando el humano
+                    comenzó a interesarse por los materiales y por la fabricación, la cocción y el horneado. Su vínculo
+                    con el progreso tecnológico de la humanidad es incuestionable.
+                    <br>
+                    La palabra química proviene del latín ars chimia (“arte alquímico”), a su vez derivado del término
+                    árabe “alquimia” (al-kímia), con el que se nombraba alrededor del año 330 a la práctica
+                    pseudocientífica de los buscadores de la piedra filosofal, con la cual podrían convertir el plomo en
+                    oro.
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/Q3.png" alt="Química" width="50%">
+                </div>
+                <p>
+                    Los primeros alquimistas eran científicos islámicos que, mientras Occidente se sumergía en el
+                    fanatismo religioso cristiano, cultivaron la sabiduría de los elementos y los materiales,
+                    comprendidos como un conjunto de cuerpos y espíritus que, empleando las técnicas correctas, podían
+                    ser manipulados o transformados.
+                    <br>
+                    A estos misteriosos personajes se les solía llamar “químicos” (de alquímicos). Sin embargo, a partir
+                    de 1661, con la publicación de El químico escéptico del científico irlandés Robert Boyle
+                    (1627-1691), el término pasó a tener un significado menos esotérico y más vinculado con las
+                    ciencias.
+                    <br>
+                    Por otro lado, la definición de la química ha variado enormemente a lo largo del tiempo. En
+                    particular porque su campo ha crecido y evolucionado gigantescamente, resignificando a la disciplina
+                    entera.
+                    <br>
+                    Alrededor de 1662, el científico suizo Christopher Glaser (1615-1670) la definió como el arte
+                    científico de disolver los cuerpos de distintos materiales. Ya que en 1730 el alemán Georg Stahl
+                    (1659-1734) la llamó el arte de entender las dinámicas de las mezclas.
+                    <br>
+                    Recién en 1837 el químico francés Jean-Baptiste Dumas (1800-1884) la definió como la ciencia que se
+                    ocupa de las fuerzas intermoleculares. En cambio, hoy la comprendemos como el estudio de la materia
+                    y sus cambios, siguiendo la definición del célebre químico hongkonés Raymond Chang (1939-2017).
+                    <br>
+                    Sin embargo, en tanto ciencia reconocida como tal, la química empezó a existir en el siglo XVIII,
+                    cuando los primeros experimentos científicos comprobables con la materia tuvieron lugar en la Europa
+                    moderna, especialmente luego de la postulación de la Teoría atómica de John Dalton en 1813.
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/Q4.png" alt="Química" width="50%">
+                </div>
+                <p>
+                    Desde entonces, la química ha provocado numerosos descubrimientos y revoluciones. Además, ha tenido
+                    un importante impacto en ciencias y disciplinas semejantes, como la biología o la física, o la
+                    ingeniería.
+                    <br>
+                    La Organización de las Naciones Unidas declaró que 2011 era el Año Internacional de la Química, en
+                    reconocimiento a la enorme trayectoria científica recorrida y al innegable impacto que esta
+                    disciplina tiene en nuestra vida.
+
+                </p>
+            </section>
+            <hr>
+            <section>
+                <h3>
+                    Tema: Relación de la química con otras ciencias
+                </h3>
+                <p>
+                    La química no solo influye en la vida de un ser vivo, sino que también afecta a toda la sociedad,
+                    cuando se quema un combustible fósil ocurren reacciones químicas que liberan energía capaz de
+                    suministrar potencia para el transporte y electricidad o calor para hogares y negocios. Recordemos
+                    que la química estudia características y composición de todos los materiales.
+                    <br>
+                    Algunos personajes en el ámbito científico suelen referirse a la química como la ciencia de centro o
+                    ciencia central, y esto porque tiene como base a la matemática y a la física, pero también se
+                    sustenta en ciencias de la vida, como la biología y la medicina.
+                    <br>
+                    Actualmente la química tiene gran relevancia por el avance científico y tecnológico que poseen las
+                    distintas sociedades, por ejemplo: hoy en día la química estudia la elaboración de medicamentos a
+                    fin de mejorar su efectividad y al mismo tiempo reducir al mínimo su peligrosidad y efectos
+                    secundarios no deseados.
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/Q5.png" alt="Química" width="50%">
+                </div>
+            </section>
+            <hr>
+            <section>
+                <h3>
+                    Tema: El método científico
+                </h3>
+                <p>
+                    El Método Científico es un sistema de investigación empleado más que nada en la producción de
+                    conocimiento científico, que estipula la medición y el criterio empírico como sus bases
+                    indispensables, así como el sometimiento a las pruebas del razonamiento. Esto significa que el
+                    método científico es un mecanismo de análisis que permite, en teoría, discernir las experiencias
+                    científicas de las que no lo son.
+                    <br>
+                    Los principios fundamentales del Método Científico son dos:
+                    <br>
+                    La reproductibilidad, que es la capacidad de repetir un determinado experimento por cualquier
+                    persona en un ambiente controlado y obtener los mismos resultados, de manera que toda afirmación
+                    científica pueda ser verificada por la comunidad científica para comprobar su universalidad.
+                    La refutabilidad, principio que establece que toda afirmación científica sustentada en un
+                    experimento puede ser refutada o falsada mediante un contraejemplo experimental, que evidencie la no
+                    universalidad de la interpretación teórica. Si la teoría no puede ser refutada mediante un
+                    contraejemplo, quedará aceptada mas no verificada, pues ninguna teoría es absolutamente verdadera.
+                    <br>
+                    Esto significa que el Método Científico propone un sistema de conocimiento del universo que descree
+                    de los absolutos, que confía en la razón y en las dotes deductivas del hombre y en la acumulación de
+                    conocimiento como una vía de aproximación a la verdad.
+                    <br>
+                    Algunos especialistas arguyen que no existe un método científico sino varios, ya que todo científico
+                    emplea distintos mecanismos de medición, de definición, de clasificación, estadísticos o
+                    hipotético-deductivos, los cuales están sujetos también a su momento histórico y por lo tanto pueden
+                    cambiar con el tiempo. Así, lo que en una época es una verdad científica aceptada, puede resultar
+                    increíble en tiempos posteriores.
+                    <br>
+                    Si bien su origen histórico es incierto, suele ubicarse su nacimiento en el siglo XVII,
+                    principalmente gracias a los estudios de Galileo Galilei.
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/Q6.png" alt="Química" width="50%">
+                </div>
+            </section>
+        </div>
+        <div *ngSwitchCase="'ma'" class="animated fadeIn">
+            <h2>Videos de ayuda</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nJ2jkOgCmAk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FgYUKCMyiRI" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+            </div>
+        </div>
+        <div *ngSwitchCase="'ref'" class="animated fadeIn reference">
+            <ul style="margin-top: 3%;">
+                <li>
+                    Conceptos básicos de química
+                    <br>
+                    <a
+                        href="https://es.khanacademy.org/science/chemistry">https://es.khanacademy.org/science/chemistry</a>
+                </li>
+                <li>
+                    Historia de la química
+                    <br>
+                    <a
+                        href="http://www.culturageneral.net/Ciencias/Quimica/Historia/index.html">http://www.culturageneral.net/Ciencias/Quimica/Historia/index.html</a>
+                </li>
+                <li>
+                    Relación química y otras ramas de la ciencia
+                    <br>
+                    <a
+                        href="https://sites.google.com/site/quimicapara1erodebachillerato/relacion-de-la-quimica-con-otras-ciencias">https://sites.google.com/site/quimicapara1erodebachillerato/relacion-de-la-quimica-con-otras-ciencias</a>
+                </li>
+                <li>
+                    Método científico
+                    <br>
+                    <a
+                        href="https://www.abc.es/ciencia/abci-metodo-cientifico-estos-cinco-pasos-201902170129_noticia.html">https://www.abc.es/ciencia/abci-metodo-cientifico-estos-cinco-pasos-201902170129_noticia.html</a>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngSwitchDefault>Contenido no encontrado</div>
+    </div>
+</div>

@@ -1,0 +1,165 @@
+<div class="materia">
+    <mat-toolbar>
+        <a mat-button [routerLink]="['/lectura-I/1']" routerLinkActive="active">Bloque 1</a>
+        <a mat-button [routerLink]="['/lectura-I/ma']" routerLinkActive="active">Materiales de
+            apoyo</a>
+        <a mat-button [routerLink]="['/lectura-I/ref']" routerLinkActive="active">Referencias</a>
+    </mat-toolbar>
+
+    <div class="" [ngSwitch]="seccion$ | async">
+        <div *ngSwitchCase="1" class="animated fadeIn">
+            <h2>Bloque 1</h2>
+            <section>
+                <h3>Tema: Proceso comunicativo: elementos y sus características</h3>
+                <p>
+                    El proceso comunicativo y sus elementos son necesarios para que exista un intercambio de datos entre
+                    individuos. Este intercambio se produce entre individuos de diferentes especies, sin embargo, el
+                    proceso comunicativo más complejo es aquel que tiene lugar entre los seres humanos.
+                    <br>
+                    Dicho proceso se compone de una serie de elementos sin los cuales no podría existir. Estos elementos
+                    incluyen a un emisor (quien emite el mensaje), un receptor (quien recibe el mensaje), un mensaje (la
+                    información emitida), un código (los signos comunes entre emisor y receptor) y un canal (el medio
+                    físico en el que tiene lugar el proceso de comunicación).
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/L1.png" alt="Metodología de la investigación" width="50%">
+                </div>
+            </section>
+        </div>
+        <div *ngSwitchCase="'ma'" class="animated fadeIn">
+            <h2>Quizes de ayuda</h2>
+            <ul>
+                <li><a target="_blank" mat-button
+                        href="https://campusvirtual.ull.es/ocw/pluginfile.php/4162/mod_resource/content/0/OA_Tilde/reglas_bsicas_palabras_agudas_llanas_esdrjulas_sobresdrjulas.html">Reglas
+                        de Acentuación</a></li>
+            </ul>
+            <h2>Archivos de ayuda</h2>
+            <ul>
+                <li><a mat-button [routerLink]="['/visor/AutoresL1']">El Zarco de Ignacio Manuel Altamirano</a></li>
+            </ul>
+            <h2>Videos de ayuda</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DiAb2n2Lex8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/i4EMg9uOCY0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GxqiiAnqEzM" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RuQe92qUUYo" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VLIXcvHg9rY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ckj-orlqNZY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/15glkvcN_PI" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cLyENwsyJrA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pWXKSA2Sff0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pWXKSA2Sff0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AL7_XR1zJ3A" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6MCGaL0CXzg" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GQXzg7jTItU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GQXzg7jTItU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/moie1lo-JG0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wF7Q9xdkuNs" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+            </div>
+        </div>
+        <div *ngSwitchCase="'ref'" class="animated fadeIn reference">
+            <ul style="margin-top: 3%;">
+                <li>
+                    Emisor, receptor, mensaje, código, canal, contexto, retroalimentación, ruido
+                    <br>
+                    <a
+                        href="https://www.lifeder.com/proceso-comunicativo-elementos/">https://www.lifeder.com/proceso-comunicativo-elementos/</a>
+                </li>
+                <li>
+                    Referencial, Poética, Emotiva, Fática, Apelativa, Metalingüística
+                    <br>
+                    <a
+                        href="https://www.todamateria.com/funciones-del-lenguaje/">https://www.todamateria.com/funciones-del-lenguaje/</a>
+                </li>
+                <li>
+                    Principios básicos de la sintaxis.
+                    <br>
+                    <a
+                        href="https://ined21.com/para-que-sirve-la-sintaxis/">https://ined21.com/para-que-sirve-la-sintaxis/</a>
+                </li>
+                <li>
+                    Reglas de acentuación.
+                    <br>
+                    <a
+                        href="http://verbum.idiomas.deusto.es/reglas-de-acentuacion-2/">http://verbum.idiomas.deusto.es/reglas-de-acentuacion-2/</a>
+                </li>
+                <li>
+                    Reglas de puntuación.
+                    <br>
+                    <a
+                        href="http://blog.falsaria.com/2013/03/los-signos-ortograficos-reglas-de-puntuacion-y-acentuacion-en-espanol/">http://blog.falsaria.com/2013/03/los-signos-ortograficos-reglas-de-puntuacion-y-acentuacion-en-espanol/</a>
+                </li>
+                <li>
+                    Coherencia, Cohesión y adecuación
+                    <br>
+                    <a href="http://aprendetaller.blogspot.com/2012/11/las-propiedades-de-la-redaccion.html
+                    ">http://aprendetaller.blogspot.com/2012/11/las-propiedades-de-la-redaccion.html
+                    </a>
+                </li>
+                <li>
+                    Conectores discursivos.
+                    <br>
+                    <a
+                        href="https://www.profedeele.es/actividad/gramatica/marcadores-discursivos-conectores/">https://www.profedeele.es/actividad/gramatica/marcadores-discursivos-conectores/</a>
+                </li>
+                <li>
+                    Descripción, narración, argumentación, exposición, diálogo
+                    <br>
+                    <a
+                        href="http://leerculturiza.blogspot.com/2017/05/34-narracion-descripcion-exposicion.html">http://leerculturiza.blogspot.com/2017/05/34-narracion-descripcion-exposicion.html</a>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngSwitchDefault>Contenido no encontrado</div>
+    </div>
+</div>

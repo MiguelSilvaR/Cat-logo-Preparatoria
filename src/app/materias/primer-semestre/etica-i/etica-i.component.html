@@ -1,0 +1,171 @@
+<div class="materia">
+    <mat-toolbar>
+        <a mat-button [routerLink]="['/etica-I/1']" routerLinkActive="active">Bloque 1</a>
+        <a mat-button [routerLink]="['/etica-I/2']" routerLinkActive="active">Bloque 2</a>
+        <a mat-button [routerLink]="['/etica-I/ma']" routerLinkActive="active">Materiales de
+            apoyo</a>
+        <a mat-button [routerLink]="['/etica-I/ref']" routerLinkActive="active">Referencias</a>
+    </mat-toolbar>
+
+    <div class="" [ngSwitch]="seccion$ | async">
+        <div *ngSwitchCase="1" class="animated fadeIn">
+            <h2>Diferencia entre ética y moral</h2>
+            <section>
+                <h3>Tema: Diferencia entre ética y moral</h3>
+                <ul>
+                    <li>Ética</li>
+                    <p>La palabra viene del griego “ethos”, que significa “forma de ser” o “carácter”, y de acuerdo con
+                        Aristóteles, podemos decir que es un conjunto de normas, conductas, hábitos y costumbres que
+                        regulan
+                        nuestro comportamiento. Como ciencia filosófica, la “ética” se encarga de estudiar la “moral”.
+                        En otras palabras, la “ética” se refiere a las reflexiones y decisiones personales, acerca de
+                        las
+                        normas
+                        “morales” que ya están establecidas por la sociedad.
+                        <br>
+                        Para que quede más claro: cuando se nos dice “no mientas, no seas inmoral”, nosotros podemos
+                        decidir
+                        si
+                        lo hacemos o no, haciendo uso de nuestra “ética”.
+                    </p>
+                    <li>Moral</li>
+                    <p>Del latín “relativo a las costumbres”, es un conjunto de reglas que se aplican en la vida
+                        cotidiana y
+                        que
+                        son usadas por todos los individuos de una sociedad. Estas normas se establecen para guiar a las
+                        personas y orientarlas sobre cómo actuar, de acuerdo con los valores, costumbres y actitudes
+                        consideradas “correctas”, “incorrectas”, “buenas” o “malas”.
+                        <br>
+                        Por ejemplo, tirar basura en las calles o no dejar sentar a una mujer embarazada en el metro se
+                        consideran como “malas” conductas. Y aunque cada uno de nosotros puede decidir hacerlo o no, si
+                        actuamos
+                        de esta forma, la sociedad considerará que nuestras actitudes son “incorrectas”.
+                    </p>
+                    <div class="img-container">
+                        <img src="assets/img/EyM.png" alt="Diferencia entre ética y moral">
+                    </div>
+                    <p>
+                        Una forma fácil de identificar la diferencia entre “ética” y “moral” es recordar que:
+                        Los valores “morales” los dicta cada sociedad en una época determinada (por eso varía y es la
+                        razón
+                        por
+                        la que nuestra abuelita puede decir que los jóvenes de ahora son “inmorales”, pues en la época
+                        en
+                        que
+                        ella creció, algunos de los valores morales eran diferentes a los de ahora)
+                        <br>
+                        En cuanto a la “ética”, es esa pequeña voz dentro de nosotros que nos dice qué debemos hacer y
+                        qué
+                        no,
+                        dependiendo de lo que cada uno de nosotros consideramos como “bueno” o “malo”, y de acuerdo con
+                        los
+                        valores morales que hemos aprendido desde pequeños en nuestra familia y sociedad.
+                    </p>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h3>Tema: Relación de la ética con la axiología y la estética</h3>
+                <p>
+                    Para entender mejor este tema, comenzaremos definiendo los conceptos de axiología y estética.
+                </p>
+                <p>
+                    <span>La axiología</span> es la ciencia que estudia los valores y cómo estos valores se producen en
+                    una
+                    sociedad, busca
+                    entender la naturaleza de los valores y los juicios de valor. Está estrechamente relacionada con
+                    otros
+                    dos
+                    campos de la filosofía: la ética y la estética.
+                </p>
+                <p>
+                    <span>La estética</span> se ocupa de la belleza y la armonía, tratando de entender la belleza y lo
+                    que
+                    significa
+                    o cómo
+                    se define, pero no una belleza o armonía física, sino que en este sentido la belleza se refiere a la
+                    bondad
+                    y a las acciones que son consideradas correctas o buenas.
+                </p>
+                <p>
+                    La ética axiológica (mezcla de ética y axiología) es esa parte de la ética que se refiere
+                    específicamente a
+                    los valores. A diferencia de las partes relacionadas con la moralidad y la justicia social, la ética
+                    axiológica no se centra directamente en lo que debemos hacer, sino en las motivaciones que nos hacen
+                    actuar.
+                </p>
+                <p>
+                    Por otro lado, <span>La estética</span> es la manifestación externa de un sentimiento, la ética el
+                    fundamento
+                    razonado y
+                    racional de los sentimientos. La ética se manifiesta a través de la estética. La estética es o puede
+                    ser
+                    cambiante, sus valores y apreciaciones son subjetivas y varían según la percepción del momento y
+                    contexto
+                    histórico del individuo, la ética permanece como un valor de la Humanidad.
+                </p>
+            </section>
+        </div>
+        <div *ngSwitchCase="2" class="animated fadeIn">
+            <h2>Axiología y ética</h2>
+            <section>
+                <h3>Tema: Valores y antivalores</h3>
+                <ul>
+                    <li>Valores</li>
+                    <p>
+                        Los valores son cualidades o atributos considerados como positivos, necesarios y deseables que
+                        los
+                        seres humanos asignan a objetos y otros seres humanos. Se caracterizan por estar asociados a la
+                        idea
+                        de lo “bueno” o por tener utilidad para la vida individual y social.
+                        <br>
+                        Por ejemplo: Respeto, solidaridad, igualdad, etc.
+                    </p>
+                    <li>Antivalores</li>
+                    <p>
+                        Los antivalores, por su parte, también son atributos que se asignan a objetos y personas, pero
+                        estos
+                        representan algo negativo, innecesario o indeseable, es decir, se asocian a la idea de lo
+                        “malo”. De
+                        esta forma, los antivalores son la contraparte de los valores. Cuando un antivalor se manifiesta
+                        en
+                        un sujeto u objeto, este implica un mal para algo o para alguien.
+                    </p>
+                    <div class="img-container">
+                        <img src="assets/img/VyA.jpg" alt="Algunos valores y antivalores" width="50%">
+                    </div>
+                </ul>
+            </section>
+        </div>
+        <div *ngSwitchCase="'ma'" class="animated fadeIn">
+            <h2>Archivos de ayuda</h2>
+            <ul>
+                <li><a mat-button [routerLink]="['/visor/1y4']">Ética y filosofía</a></li>
+            </ul>
+            <h2>Quizlet</h2>
+            <p>Haz click en las tarjetas para ver el valor o antivalor correspondiente</p>
+            <iframe src="https://quizlet.com/279476443/flashcards/embed?x=1jj1" height="500" width="100%"
+                style="border:0"></iframe>
+            <p style="margin-top: 3%;">Relaciona el valor con su antivalor</p>
+            <iframe src="https://quizlet.com/279476443/match/embed?x=1jj1" height="500" width="100%"
+                style="border:0"></iframe>
+        </div>
+        <div *ngSwitchCase="'ref'" class="animated fadeIn reference">
+            <ul style="margin-top: 3%;">
+                <li>
+                    Unitips. (2017). ÉTICA Y MORAL ¿CUÁL ES LA DIFERENCIA?. Mayo 2020, de Unitips Sitio web:
+                    <br>
+                    <a
+                        href="https://blog.unitips.mx/etica-y-moral-cual-es-la-diferencia">https://blog.unitips.mx/etica-y-moral-cual-es-la-diferencia</a>
+                </li>
+                <li>
+                    Morales R.. (S/A). ¿Qué es la ética axiológica?. Mayo 2020, de lifeder.com Sitio web:
+                    <br>
+                    <a href="https://www.lifeder.com/etica-axiologica/">https://www.lifeder.com/etica-axiologica/</a>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngSwitchDefault>Contenido no encontrado</div>
+    </div>
+</div>

@@ -1,0 +1,560 @@
+<div class="materia">
+    <mat-toolbar>
+        <a mat-button [routerLink]="['/ingles-I/1']" routerLinkActive="active">Bloque 1</a>
+        <a mat-button [routerLink]="['/ingles-I/ma']" routerLinkActive="active">Materiales de
+            apoyo</a>
+        <a mat-button [routerLink]="['/ingles-I/ref']" routerLinkActive="active">Referencias</a>
+    </mat-toolbar>
+
+    <div class="" [ngSwitch]="seccion$ | async">
+        <div *ngSwitchCase="1" class="animated fadeIn">
+            <h2>Personal Profile</h2>
+            <section>
+                <h3>Tema: Vocabulario</h3>
+
+                <p>
+                    Cuando estamos en un lugar nuevo con nuevas personas, usualmente nos presentamos y contamos algunas
+                    cosas generales sobre nosotros, por ejemplo:
+                    <br>
+                    Nombre, edad, de donde somos, etc.
+                    <br>
+                    A veces cuando seguimos la conversación, salen temas familiares, sobre nuestra cultura, cumpleaños,
+                    etc.
+                    <br>
+                    Tod esta información es nuestro personal profile o en español: perfil personal; es decir, tus datos
+                    personales que te hace único y que son una buena herramienta para iniciar o entablar una
+                    conversación.
+                    <br>
+                    En este bloque, aprenderemos vocabulario importante que lleva un “personal profile”
+                    <br>
+
+                    <span>Nombre:</span>
+                    <br>
+                    What’s your name? – ¿Cuál es tu/su nombre? ¿Cómo se llama /te llamas?
+                    <br>
+                    What’s your surname / family name? – ¿Cuál es tu/su apellido? ¿Cómo se apellida/te apellidas?
+                    <br>
+                    My name is ____ – Mi nombre es ____ / Me llamo _____
+                    <br>
+                    I am ___ / I’m ____ – Soy ____
+                    <br>
+                    <span>Edad:</span>
+                    <br>
+                    What’s your age? / ¿Cuál es tu/su edad?
+                    <br>
+                    How old are you? / ¿Cuántos años tienes?
+                    <br>
+                    I am ____ years old / Tengo ____ años
+                    <br>
+                    When is your birthday? /¿Cuándo es tu/su cumpleaños?
+                    <br>
+                    My birthday is _____ / Mi cumpleaños es _____
+                    <br>
+                    My date of birth is _____ – Mi fecha de nacimiento es _____
+                    <br>
+                    I was born in ____ – Nací en / Soy de ____
+                    <br>
+                    <span>Nacionalidad/nationality:</span>
+                    <br>
+                    What’s your nationality? – ¿Cuál es tu nacionalidad?
+                    <br>
+                    My nationality is ____ – Mi nacionalidad es
+                    <br>
+                    A continuación encontrará una tabla algunas nacionalidades y cómo se escriben en inglés
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/IN1.png" alt="Nacionalidades en inglés">
+                </div>
+                <p>
+                    <span>Familia</span>
+                    <br>
+                    Familia básica
+                    <br>
+                    Estos son los miembros más comunes que forman parte de las familias de cualquier cultura.
+                    <br>
+                    Mother = Madre
+                    <br>
+                    Father = Padre
+                    <br>
+                    Wife = Esposa
+                    <br>
+                    Husband = Marido
+                    <br>
+                    Aunt = Tía
+                    <br>
+                    Uncle = Tío
+                    <br>
+                    Niece = Sobrina
+                    <br>
+                    Nephew = Sobrino
+                    <br>
+                    Sister = Hermana
+                    <br>
+
+                    Ejemplos de uso de estas palabras:
+                    <br>
+                    Of all of my father's brothers and sisters, only one of my aunts lives in this city.
+                    <br>
+                    Tom is her husband. They got married three years ago.
+                    <br>
+                    Kate went to her nephew's graduation ceremony.
+                    <br>
+                    En español:
+                    <br>
+                    De todos los hermanos y hermanas de mi padre, solo una de mis tías vive en la ciudad.
+                    <br>
+                    Tom es su esposo. Ellos se casaron hace tres años.
+                    <br>
+                    KAte fue a la graduación de su sobrino.
+                    <br>
+
+                    <span>Números</span>
+                    <br>
+                    Del 1 al 10
+                    <br>
+                    1 – One
+                    <br>
+                    2 – Two
+                    <br>
+                    3 – Three
+                    <br>
+                    4 – Four
+                    <br>
+                    5 – Five
+                    <br>
+                    6 – Six
+                    <br>
+                    7 – Seven
+                    <br>
+                    8 – Eight
+                    <br>
+                    9 – Nine
+                    <br>
+                    10 – Ten
+                    <br>
+                    Del 10 al 20
+                    <br>
+                    10 – Ten
+                    <br>
+                    11 – Eleven
+                    <br>
+                    12 – Twelve
+                    <br>
+                    <span><u>**A partir del número 13 la formación de los números es regular.</u></span>
+                    <br>
+                    <span><u>**Con algunas excepciones, se trata del Número + teen.</u></span>
+                    <br>
+
+
+                    13 – Thirteen
+                    <br>
+                    14 – Fourteen
+                    <br>
+                    15 – Fifteen
+                    <br>
+                    16 – Sixteen
+                    <br>
+                    17 – Seventeen
+                    <br>
+                    18 – Eighteen
+                    <br>
+                    19 – Nineteen
+                    <br>
+                    <span><u>**Lo mismo sucede con los números redondos, 20,30,40,50, etc.</u></span>
+                    <br>
+                    <span><u>**Con algunas excepciones, se foman con Número + ty.</u></span>
+                    <br>
+                    20 – Twenty
+                    <br>
+                    30 – Thirty
+                    <br>
+                    40 –Forty
+                    <br>
+                    50- Fifty
+                    <br>
+                    60 – Sixty
+                    <br>
+                    70 – Seventy
+                    <br>
+                    80 – Eighty
+                    <br>
+                    90 – Ninety
+                    <br>
+                    <br>
+                    Aquí tienes una tabla con todos los números del 1 al 100.
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/IN2.png" alt="Números en inglés">
+                </div>
+                <p>
+                    Para seguir formando números después del 100 solo es cuestión de combinar
+                    <br>
+                    101 – One hundred (and) one
+                    <br>
+                    110 – One hundred (and) ten
+                    <br>
+                    125 – One hundred (and) twenty-five
+                    <br>
+                    163 – One hundred (and) sixty – three
+                    <br>
+
+                    Y los siguientes centenares, siguiendo el mismo modelo.
+                    <br>
+                    200 – Two hundred
+                    <br>
+                    300 – Three hundred
+                    <br>
+                    400 – Four hundred
+                    <br>
+                    650 – Six hundred (and) fifty
+                    <br>
+                    782 – Seven hundred (and) eighty-two
+                    <br>
+                    <br>
+                    <span>Fechas</span>
+                    <br>
+                    A continuación, te mostraremos todo lo que debes saber para hablar de las fechas en inglés como todo
+                    un experto, en cualquier lugar del mundo en el que te encuentres.
+                    <br>
+                    Comencemos con algunos básicos. Primero que nada, deberás aprender muy bien cómo decir los días de
+                    la semana y los meses del año
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/IN3.png" alt="Números en inglés">
+                </div>
+                <div class="img-container">
+                    <img src="assets/img/IN4.png" alt="Números en inglés">
+                </div>
+                <p>
+                    Otra cosa que deberás aprender para dominar el manejo de las fechas en inglés son los números
+                    ordinales. Al igual que en español, en inglés se utilizan los números ordinales para hablar de
+                    fechas.
+                    <br>
+                    Con aprenderlos hasta el número 20 te bastará, el resto será mucho más sencillo. También recuerda
+                    que es importante que recuerdes la forma en que estos se abrevian.
+
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/IN5.png" alt="Números en inglés">
+                </div>
+                <p>
+                    ¿Cómo se escriben las fechas en inglés de Norteamérica?
+                    <br>
+                    En Estados Unidos al escribir la fecha se debe escribir primero el mes, después el día y finalmente
+                    el año. Digamos que queremos escribir primero de abril de 2018, lo haríamos de la siguiente forma:
+                    <br>
+                    En números: 04/01/2018
+                    <br>
+                    Escrito: April 1st, 2018
+                    <br>
+                    Se dice: April first twenty eighteen
+                    <br>
+                    ¡Muy importante! Recuerda que los años en inglés se escriben de la siguiente forma:
+                    <br>
+                    – Si te refieres a un año antes del 2000 deberás dividirlo en dos partes, por ejemplo: 1987 se dice
+                    nineteen eighty five, 1900 se dice nineteen hundred.
+                    <br>
+                    – Los años entre el 2000 y 2009 no se dividen. 2000 se dice simplemente two thousand, 2001 two
+                    thousand and one y así sucesivamente.
+                    <br>
+                    – A partir del 2010 se dividen en 20 y 10. 2018 se dice twenty eighteen, 2011 twenty eleven y así
+                    sucesivamente.
+                    <br>
+                </p>
+            </section>
+            <hr>
+            <section>
+                <h3>Tema: gramática</h3>
+                <p>
+                    <span>Verbo to be</span>
+                    <br>
+                    El verbo TO BE, que en castellano se traduce como SER o ESTAR, en el idioma inglés goza de una
+                    particular importancia. Su significado depende del sentido de la oración. Por ejemplo:
+                    <br>
+                    I am a doctor. Soy un doctor. (Se aplica como verbo ser)
+                    <br>
+                    I am in my house. Estoy en mi casa. (Se aplica como verbo estar)
+                    <br>
+                    En el siguiente cuadro se puede observar su declinación en el modo indicativo del Presente Simple:
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/IN6.png" alt="Números en inglés">
+                </div>
+                <p>
+                    <span>Pronombre personales</span>
+                    <br>
+                    Los pronombres son las palabras que utilizamos para referirnos a alguien o algo. Por ejemplo: yo,
+                    él, ella, tú o vos y nosotros. En inglés este tipo de palabras se llaman Personal Pronouns
+                    Which are the personal pronouns? / ¿Cuáles son los pronombres personales?
+                    Antes de avanzar es importante tener en cuenta que, además de plural y singular, los pronombres se
+                    dividen en 1ª, 2ª y 3ª persona.
+                    <br>
+                    La 1ª persona:
+                    <br>
+                    Se usa cuando me refiero a mí, I, o a nosotros, We.
+                    <br>
+                    La 2ª persona:
+                    <br>
+                    Es como te refieres a con quién estás hablando: You, que puede traducir tú o vos y ustedes o
+                    vosotros.
+                    <br>
+                    La 3ª persona:
+                    <br>
+                    Se refiere a la persona o cosa de quien estás hablando, ejemplo: he / él, she / ella, it / ello o
+                    eso y they / ellos o ellas.
+                    <br>
+
+                    <span>Función</span>
+                    <br>
+                    1. El pronombre en función de sujeto
+                    <br>
+                    El sujeto de una oración es la persona o cosa que realiza la acción del verbo. Se utilizan los
+                    pronombres en función de sujeto cuando el pronombre es el sujeto de la oración. Este pronombre en
+                    inglés, a diferencia del español, debe figurar siempre.
+                    <br>
+
+                    Ejemplos:
+                    <br>
+                    I am ill.(Yo estoy enfermo.)
+                    <br>
+                    Subject = I
+                    <br>
+                    You are tall.(Tú eres alto.)
+                    <br>
+                    Subject = you
+                    <br>
+                    He is handsome.(Él es guapo.)
+                    <br>
+                    Subject = he
+                    <br>
+                    We are tired.(Nosotros estamos cansados.)
+                    <br>
+                    Subject = we
+                    <br>
+
+                    2. El pronombre en función de objeto
+                    <br>
+                    Este pronombre se coloca a continuación del verbo al que complementa o a continuación de
+                    preposiciones como “for”, “to”, “with” y “at”.
+                    <br>
+
+                    Ejemplos:
+                    <br>
+
+                    I can help you.(Puedo ayudarte.)
+                    <br>
+                    Subject = I, Object = you
+                    <br>
+                    Can you see him?(¿Puedes verle?)
+                    <br>
+                    Subject = you, Object = him
+                    <br>
+                    He is going to the party with us.(Él va a la fiesta con nosotros.)
+                    <br>
+                    Subject = he, Object = us
+                    <br>
+                    It [the letter] is for you.(Es [la carta] para ti.)
+                    <br>
+                    Subject = it, Object = you
+                    <br>
+                    <span>Adjetivos posesivos</span>
+                    <br>
+                    Los adjetivos posesivos en inglés indican a quién le pertenece el sustantivo, es decir, a quien le
+                    pertenece ese algo. Para que mejores tu gramática y logres un buen dominio del idioma, te
+                    explicaremos el uso de este tipo de adjetivos.
+                    <br>
+                    Adjetivos posesivos en ingles:
+                    <br>
+                    Los possessive adjectives son muy sencillos de aprender, veamos una lista:
+                    <br>
+
+                    My = mi / mis
+                    <br>
+                    Your = tu/tus
+                    <br>
+                    Her = su/ sus (de ella)
+                    <br>
+                    His = su/ sus (de él)
+                    <br>
+                    Its = su/ sus (de ello)
+                    <br>
+                    Our = nuestro/a nuestros/as
+                    <br>
+                    Their = su/sus (de ellos)
+                    <br>
+
+                    Como puedess notar, en el inglés no hay forma en plural para estos adjetivos posesivos y cada forma
+                    tiene relación con un pronombre personal. Veamos dos ejemplos:
+                    <br>
+                    These are my books = Estos son mis libros.
+                    <br>
+                    I have my hair cut this morning = Me corte el cabello esta mañana.
+                    <br>
+                    En ambas frases usamos el posesivo de primera persona, “mi”, pero si te fijas en la segunda hacemos
+                    referencia a una información un tanto redundante. En inglés es muy típico usar los adjetivos
+                    posesivos con partes del cuerpo y otros objetos personales.
+                    <br>
+
+
+                    My
+                    <br>
+                    Este adjetivo se utiliza para indicar pertenencia a la primera persona singular (yo). Veamos algunos
+                    ejemplos:
+                    <br>
+                    My son is 6 years old – Mi hijo tiene 6 años
+                    <br>
+                    This is my new room, Amy – Esta es mi nueva habitación, Amy
+                    <br>
+
+                    Your
+                    <br>
+                    Utilizamos este adjetivo para indicar pertenencia a la segunda persona singular (tú).
+                    <br>
+                    I'm your father – Soy tu padre
+                    <br>
+                    Tom will be your partner in the dance contest - Tom será tu compañero en el concurso de baile
+                    <br>
+
+                    His
+                    <br>
+                    Se emplea para indicar pertenencia a la tercera persona singular del masculino (él) y se puede
+                    traducir al español como “su” y “de él”.
+                    <br>
+                    Barcelona is his hometown – Barcelona es su hogar
+                    <br>
+                    Mark is washing his hands - Mark se está lavando las manos (fíjate que en español no usamos en estos
+                    casos el posesivo)
+                    <br>
+                    Her
+                    <br>
+                    Este adjetivo se emplea para indicar pertenencia a la tercera persona singular del femenino (ella) y
+                    se traduce como “su” y “de ella”.
+                    <br>
+                    Her dress is blue - Su vestido es azul
+                    <br>
+                    Her husband will pick her up soon. - Su esposo la recogerá pronto.
+                    <br>
+
+                    Its
+                    <br>
+                    Se emplea para indicar pertenencia a una tercera persona singular, sin especificar el género. Este
+                    se utiliza cuando hablamos de animales y objetos.
+                    <br>
+                    My cat doesn't like to sleep in its cage - A mi gato no le gusta dormir en su caja
+                    <br>
+                    Its nest is made of twigs. - Su nido está hecho de ramitas.
+                    <br>
+
+                    Our
+                    <br>
+                    Utilizamos este adjetivo posesivo para indicar pertenencia a una primera persona del plural
+                    (nosotros/nosotras). En español se traduce como “nuestro”.
+                    <br>
+                    This is our house - Esta es nuestra casa
+                    <br>
+                    That is our daughter = Aquella es nuestra hija.
+                    <br>
+
+                    Their
+                    <br>
+                    Por último, usamos este adjetivo para indicar pertenencia a una tercera persona del plural
+                    (ellos/ellas) y se traduce como “su”, “de ellos” o “de ellas”.
+                    <br>
+                    Do you know if their children go to school? - ¿Sabes si sus hijos van a la escuela?
+                    <br>
+                    Their kitchen is clean. - Su cocina está limpia.
+                    <br>
+                </p>
+            </section>
+        </div>
+
+        <div *ngSwitchCase="'ma'" class="animated fadeIn">
+            <h2>Videos de ayuda</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/E5CCc7ivLvA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mewbwwwmMik" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/g94dqnuc3XE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cVkSndpZtN0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jni7wpcfn9s" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div *ngSwitchCase="'ref'" class="animated fadeIn reference">
+            <ul style="margin-top: 3%;">
+                <li>
+                    Wall Street Englis Argentina. (2018). Aprendé sobre los adjetivos posesivos en inglés. Mayo 2020, de
+                    Wall Street English Sitio web:
+                    <br>
+                    <a
+                        href="https://www.wallstreetenglish.com.ar/blog/aprende-sobre-los-adjetivos-posesivos-en-ingles">https://www.wallstreetenglish.com.ar/blog/aprende-sobre-los-adjetivos-posesivos-en-ingles</a>
+                </li>
+                <li>
+                    Curso-ingles.com. (S/A). Personal Pronouns. Mayo 2020, de Curso-ingles.com Sitio web:
+                    <br>
+                    <a
+                        href="https://www.curso-ingles.com/aprender/cursos/nivel-basico/pronouns/personal-pronouns">https://www.curso-ingles.com/aprender/cursos/nivel-basico/pronouns/personal-pronouns</a>
+                </li>
+                <li>
+                    GCF global. (S/A). Gramática: pronombres. Mayo 2020, de GCF global Sitio web:
+                    <br>
+                    <a
+                        href="https://idiomas.gcfglobal.org/es/curso/ingles/gramatica/pronombres-personales-en-ingles/">https://idiomas.gcfglobal.org/es/curso/ingles/gramatica/pronombres-personales-en-ingles/</a>
+                </li>
+                <li>
+                    (2017). Verbo TO BE – Ser o Estar. Mayo 2020, de Aprender inglés es fácil Sitio web:
+                    <br>
+                    <a
+                        href="http://www.aprenderinglesfacil.es/2008/03/verbo-to-be-ser-o-estar.html">http://www.aprenderinglesfacil.es/2008/03/verbo-to-be-ser-o-estar.html</a>
+                </li>
+                <li>
+                    Manjarrez E. (S/A). CÓMO ESCRIBIR LAS FECHAS EN INGLÉS AMERICANO Y BRITÁNICO. Mayo 2020, de EF
+                    English
+                    Live Sitio web:
+                    <br>
+                    <a
+                        href="https://englishlive.ef.com/es-mx/blog/ingles-en-la-vida-real/escribir-fechas-ingles-americano-ingles-britanico/">https://englishlive.ef.com/es-mx/blog/ingles-en-la-vida-real/escribir-fechas-ingles-americano-ingles-britanico/</a>
+                </li>
+                <li>
+                    (2020). Vocabulario básico en inglés que debes conocer: los números en inglés. Mayo 2020, de Trucos
+                    Londres Sitio web:
+                    <br>
+                    <a
+                        href="https://trucoslondres.com/aprender-ingles/vocabulario/numeros-ingles/">https://trucoslondres.com/aprender-ingles/vocabulario/numeros-ingles/</a>
+                </li>
+                <li>
+                    (2017). Cómo nombrar los miembros de la familia en inglés. Mayo 2020, de Wall Street English Sitio
+                    web:
+                    <br>
+                    <a
+                        href="https://www.wallstreetenglish.com.ar/blog/como-nombrar-los-miembros-de-la-familia-en-ingles">https://www.wallstreetenglish.com.ar/blog/como-nombrar-los-miembros-de-la-familia-en-ingles</a>
+                </li>
+                <li>
+                    (2019). Vocabulario básico en inglés que debes conocer: Información personal. Mayo 2020, de Trucos
+                    Londres Sitio web:
+                    <br>
+                    <a
+                        href="https://trucoslondres.com/aprender-ingles/vocabulario/datos-personales-ingles/">https://trucoslondres.com/aprender-ingles/vocabulario/datos-personales-ingles/</a>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngSwitchDefault>Contenido no encontrado</div>
+    </div>
+</div>

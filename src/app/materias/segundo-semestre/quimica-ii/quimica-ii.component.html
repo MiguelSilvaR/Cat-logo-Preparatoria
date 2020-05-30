@@ -1,0 +1,340 @@
+<div class="materia">
+    <mat-toolbar>
+        <a mat-button [routerLink]="['/quimica-II/1']" routerLinkActive="active">Bloque 1</a>
+        <a mat-button [routerLink]="['/quimica-II/ma']" routerLinkActive="active">Materiales de
+            apoyo</a>
+        <a mat-button [routerLink]="['/quimica-II/ref']" routerLinkActive="active">Referencias</a>
+    </mat-toolbar>
+
+    <div class="" [ngSwitch]="seccion$ | async">
+        <div *ngSwitchCase="1" class="animated fadeIn">
+            <h2>Bloque
+            </h2>
+            <section>
+                <h3>Tema: Mol</h3>
+                <p>
+                    El mol es la unidad utilizada para expresar la cantidad de una determinada sustancia en el Sistema
+                    Internacional de unidades (SI), el resultado de expresar la masa atómica de un elemento o la masa
+                    molecular de un compuesto en gramos.
+                    <br>
+                    Así, para estos últimos, primero se calcula la masa molecular sumando las masas atómicas de cada
+                    elemento participante multiplicada por el número de veces que aparece y el número resultante se
+                    expresa en gramos. El mol es la cantidad de sustancia que contiene tantas partículas (átomos,
+                    moléculas, iones, etc.) como existen en 12 g del isótopo de carbono 12.
+
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/QII1.png" alt="MOL">
+                </div>
+                <p>
+                    Un mol de cualquier compuesto contiene siempre una cantidad de moléculas igual al número de Avogadro
+                    (6,02.1023) y se utiliza mucho para efectuar los cálculos químicos.
+                    <br>
+                    Utilicemos como ejemplo la reacción CaCO3 → CaO + CO2
+                    <br>
+                    1 mol de CaCO3 (100 g) origina 1 mol de CaO (56 g) más 1 mol de CO2 (44 g), cumpliéndose el
+                    principio de la conservación de la materia. También se utiliza en cálculos en que intervienen
+                    concentraciones y se dice que una concentración es 1 molar cuando un litro de la disolución contiene
+                    un mol de la sustancia en cuestión.
+                    <br>
+                    <span>Masa molar</span>
+                    <br>
+                    La masa molar (M) es la cantidad de masa que una sustancia contiene en un mol. Un mol se define como
+                    6.022 * 10 elevado a 23 partículas.
+                    <br>
+                    En la tabla periódica, se puede encontrar la masa molar de los elementos, también llamada masa
+                    atómica o peso atómico, en la parte inferior del elemento. El hidrógeno por ejemplo, tiene una masa
+                    molecular de 1.008 y el nitrógeno de 14.01.
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/QII2.png" alt="MOL">
+                </div>
+                <P>
+                    Para calcular la masa molecular de un compuesto, también llamado masa o peso molecular, como el
+                    amoníaco (NH3) se debe sumar la masa molar de los elementos del compuesto multiplicado por las veces
+                    que aparecen, por ejemplo:
+                    <br>
+                    Masa molar de NH3 =
+                    <br>
+                    1 molécula de Nitrógeno por su masa atómica de 14.01 más 3 moléculas de Hidrógeno por su masa
+                    atómica de 1.008 = (1 * 14.01) + (3 * 1.008) = 14.01 + 3.024 = 43.038 u = 17.03 masa molecular =
+                    17.03 g/mol de masa molar en el amoníaco.
+                    <br>
+                    Cuando se conoce la masa molar de un compuesto, se sabe a su vez la cantidad de mol por gramo,
+                    recordando que cada mol es 6.022 * 10^23 partículas.
+                    <br>
+                    Por lo tanto, conociendo la masa molar se podrá calcular la cantidad de moles en un recipiente
+                    usando la fórmula: mol= masa / masa molar. Por ejemplo, en 100 gramos de amoniaco (NH3) para
+                    encontrar la cantidad de moles debemos dividir 100 / 17.03 g/mol que da un resultado aproximado de
+                    5.8 moles en 100 gramos de amoniaco.
+                    <br>
+                    En química, la masa molar es importante para determinar el peso de la cantidad de masa que se
+                    requiere de una sustancia, ya que, nuestras balanzas están calibradas por peso y no por masa. Es por
+                    ello que la masa molar es expresada generalmente por kilogramos por mol (kg/mol) o gramos por mol
+                    (g/mol).
+                    <br>
+                    <span>Volumen molar</span>
+                    <br>
+                    Volumen molar es un concepto que se utiliza en el ámbito de la química. La noción se emplea para
+                    nombrar al volumen ocupado por un mol de una sustancia, utilizándose como unidad de referencia al
+                    metro cúbico por mol.
+                    <br>
+                    Como se puede advertir si analizamos la definición que mencionamos en el primer párrafo, para
+                    entender qué es el volumen molar se hace imprescindible comprender qué es el volumen y qué es un
+                    mol.
+                    <br>
+                    La idea de volumen puede usarse de distintos modos: en este caso, nos interesa su acepción como la
+                    magnitud que señala el espacio ocupado por algo en alto, ancho y largo (es decir, en tres
+                    dimensiones). Un mol, por su parte, es una unidad que permite realizar la medición de la cantidad
+                    existente de un elemento que tiene un peso equivalente a su peso molecular reflejado en gramos.
+                    <br>
+                    Es importante mencionar que, en toda sustancia, un mol alberga una cantidad de masa que está
+                    contenida en 6,022 x 10 elevado a 23 moléculas. Esta cifra (6,022 x 10 elevado a 23) se denomina
+                    número de Avogadro y es la cantidad de átomos existente en doce gramos de carbono-12 puro. El número
+                    de Avogadro permite contabilizar entidades microscópicas partiendo de medidas microscópicas.
+                    <br>
+                    También es necesario conocer la ley de Avogadro, que señala que, cuando distintos gases se miden en
+                    idénticas condiciones de temperatura y presión, albergan la misma cantidad de partículas.
+                    <br>
+                    Retomando la idea de volumen molecular, a partir de lo mencionado por la ley de Avogadro, se
+                    desprende que el mol de un gas siempre ocupa el mismo volumen cuando se mantienen las condiciones de
+                    temperatura y presión. El volumen molar normal de las sustancias gaseosas es 22,4 litros, estimado
+                    con una temperatura de 0º C y una presión de 1 atmósfera. Esto ocurre en todo gas ideal.
+                    <br>
+                    Los gases ideales, también conocidos con el nombre de gases perfectos, responden a una ley según la
+                    cual las partículas que forman el gas no se atraen ni se repelen entre ellas, y cuando chocan lo
+                    hacen de forma perfectamente elástica.
+                    <br>
+                    Por lo tanto, el volumen molar normal de un gas, cuyo valor es de 22,4 litros, sólo se da si nos
+                    encontramos ante un gas ideal (o perfecto), pero esto no ocurre con los denominados gases
+                    ordinarios; estos últimos poseen moléculas con volumen, aunque no sea considerable, y esto hace que
+                    su volumen molar sea diferente de 22,4 litros. De todos modos, no se trata de diferencias muy
+                    grandes; por ejemplo, mientras que el monóxido de carbono sí tiene dicho volumen, el dióxido de
+                    azufre y el dióxido de carbono se encuentran 0,5 y 0,1 litros por debajo, respectivamente.
+                    <br>
+                </P>
+            </section>
+            <hr>
+            <section>
+                <h3>Ley de la conservación de la materia</h3>
+                <p>
+                    La ley de la Conservación de la Materia, es también llamada ley de conservación de la masa o Ley de
+                    Lomonósov-Lavoisier, en honor a sus creadores.
+                    Postula que la cantidad de materia antes y después de una transformación es siempre la misma. Es una
+                    de las leyes fundamentales en todas las ciencias naturales. Se resumen con la célebre frase: «nada
+                    se pierde, nada se crea, todo se transforma».
+                    <br>
+                    La materia es el término general que se aplica a todo lo que ocupa espacio y posee los atributos de
+                    gravedad e inercia.
+                    <br>
+                    Fue elaborada independientemente por Mijaíl Lomonósov en 1745 y por Antoine Lavoisier en 1785. Esta
+                    ley es fundamental para una adecuada comprensión de la química. Está detrás de la descripción
+                    habitual de las reacciones químicas mediante la ecuación química. También de los métodos
+                    gravimétricos de la química analítica.
+                    <br>
+                    La única salvedad que hay que tener en cuenta son las reacciones nucleares, en las que la masa sí se
+                    modifica de forma sutil. En estos casos en la suma de masas hay que tener en cuenta la equivalencia
+                    entre masa y energía.
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/QII3.png" alt="MOL">
+                </div>
+                <p>
+                    <span>Relaciones estequiométricas</span>
+                    <br>
+                    La estequiometría establece relaciones entre las moléculas o elementos que conforman los reactivos
+                    de una ecuación química con los productos de dicha reacción. Las relaciones que se establecen son
+                    relaciones MOLARES entre los compuestos o elementos que conforman la ecuación química: siempre en
+                    MOLES, NUNCA en gramos.
+                    <br>
+                    La estequiometría es el estudio de las relaciones cuantitativas (de cantidades) entre los reactivos
+                    y los productos en una ecuación química y se basa en la ecuación balanceada.
+                    <br>
+                    Los coeficientes estequiométricos de una reacción química sólo nos indican la proporción en la que
+                    reaccionan dichas sustancias. No nos dicen cuánto están reaccionando.
+                    <br>
+                    Analicemos la siguiente ecuación química balanceada: C7H8 + 9 O2 → 7 CO2 + 4 H2O
+                    <br>
+                    Podemos establecer las siguientes relaciones:
+                    <br>
+                    Por 1 mol de C7H8 que reacciona, se necesitan 9 moles de O2. En pocas palabras, estamos
+                    estableciendo una regla de tres, la cual también la podemos escribir como un factor de conversión
+                    unitario:
+                    <br>
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/QII4.png" alt="CONSERVACION DE LA ENERGÍA">
+                </div>
+                <p>
+                    También podemos establecer relaciones entre las moles de O2 y las moles de CO2 producidas o la
+                    relación entre las moles de H2O producidas y la cantidad de O2 necesarias para producirla, tal y
+                    como podemos observar en las siguientes relaciones estequiométricas:
+                </p>
+                <div class="img-container">
+                    <img src="assets/img/QII5.png" alt="CONSERVACION DE LA ENERGÍA">
+                </div>
+                <p>
+                    <span>CÁLCULOS CON ESTEQUIOMETRÍA</span>
+                    <br>
+                    Una reacción química balanceada, nos informa sobre las relaciones molares entre reactantes y
+                    productos.
+                    <br>
+                    Cuando se lleva a cabo una reacción química ya sea, en el laboratorio, en una fábrica o en la
+                    naturaleza, las cantidades que se emplean pueden ser muy variadas y se conocen como las condiciones
+                    de reacción. Las relaciones estequiométricas, nos permitirán conocer la cantidad de producto que
+                    esperamos en las reacciones químicas, dicho de otra manera, estas relaciones nos permiten conocer
+                    cuánto se producirá o cuánto se necesitará de una sustancia, cuando la reacción ocurre a esas
+                    condiciones.
+                    <br> Por ejemplo, si nos piden calcular:
+                    ¿Cuántos moles de cloruro de magnesio (MgCl2), se producirán, si se hacen reaccionar 2,4 g de Mg con
+                    suficiente cantidad de ácido clorhídrico (HCl)? (estas son las condiciones de reacción).
+                    <br>
+                    La reacción química es la siguiente:
+                    <br>
+                    Mg(s) + HCl(ac) → MgCl2(ac) + H2(g)
+                    <br>
+                    El primer paso será balancear la ecuación, esto permite conocer las relaciones estequiométricas
+                    existentes entre reactivos y productos.
+                    <br>
+                    Mg(s) + 2 HCl(ac) → MgCl2(ac) + H2(g)
+                    <br>
+                    El segundo paso, como las relaciones estequiométricas se establecen en moles, debemos conocer a
+                    cuántas moles equivale la cantidad en gramos del reactivo. Si la masa molar del Mg es igual a 24
+                    g/mol, tendremos que a las condiciones de la reacción descrita anteriormente, se están haciendo
+                    reaccionar 0,1 mol de Mg.
+                    <br>
+                    El tercer paso, analizamos las relaciones estequiométricas descritas en la ecuación balanceada.
+                    Podemos ver que la relación entre el Mg (reactivo) y el MgCl2 (producto) es 1:1; por lo que podemos
+                    concluir que a las condiciones de esa reacción se producirán 0, 1 mol de MgCl2.
+                    <br>
+                </p>
+            </section>
+            <section>
+                <h3>Tema: Reactivo limitante</h3>
+                <p>
+                    Reactivo es un adjetivo que se utiliza para calificar a aquello que genera una reacción. En el
+                    ámbito de la química, reactivo se emplea como sustantivo para nombrar a la sustancia que establece
+                    un vínculo con otra y que sirve para revelar la presencia de ésta y producir una nueva.
+                    <br>
+                    En este sentido, podemos decir que un reactivo limitante es aquel que, en el marco de la reacción,
+                    se consume en su totalidad. De este modo, delimita la cantidad de producto que puede formarse.
+                    <br>
+                    Tomemos el caso de dos sustancias que interactúan y producen una reacción química. Si una de las
+                    sustancias se acaba, ya que se consume durante el proceso, la reacción se detendrá (no podrá seguir
+                    desarrollándose). El reactivo consumido actúa como reactivo limitante: limita la posibilidad de que
+                    la reacción siga su curso y, por lo tanto, también limita la cantidad del producto que se genera por
+                    la reacción.
+                    <br>
+                    Se dice que el reactivo limitante se basa en una ecuación química ajustada o balanceada. Es posible
+                    conocer los moles del producto que se obtiene al saber cuál es el número de moles del reactivo. El
+                    concepto de proporción de reacción define las cantidades relativas de productos y reactivos que
+                    forman parte de una reacción, y es posible expresarla en masas, milimoles o moles.
+                    <br>
+                    El mol, por su parte, es una unidad reconocida por el Sistema Internacional de Unidades que sirve
+                    para medir la cantidad de una sustancia dada. Cabe mencionar que es una de las siete unidades
+                    básicas (también conocidas con el nombre de unidades físicas fundamentales), lo que significa que
+                    cualquiera de las demás pueden derivarse de éstas siete, razón por la cual se engloban en el
+                    conjunto de unidades derivadas.
+                    <br>
+                    El reactivo limitante, en definitiva, se acaba y detiene la reacción. En este punto, aquellos
+                    reactivos que aún permanecen, ya que sólo se consumen de manera parcial, reciben el nombre de
+                    reactivos en exceso.
+                    <br>
+                    El nivel de producto obtenido una vez que se consume la totalidad del reactivo limitante marca el
+                    rendimiento químico de cada reacción. Debido a estas propiedades, un científico puede maximizar el
+                    aprovechamiento de los reactivos, utilizando la cantidad justa de reactivo limitante y evitando el
+                    derroche de recursos.
+                    <br>
+                    Este concepto es de interés para la estequiometría, el cálculo de las relaciones cuantitativas que
+                    la química contempla para los productos y reactivos que participan de las reacciones químicas. Es
+                    posible deducir dichas relaciones partiendo de la teoría atómica (que afirma que la materia se
+                    compone de átomos, unidades discretas, y tuvo sus orígenes en la Antigua Grecia), aunque
+                    generalmente han sido enunciadas sin hacer mención a la composición de la materia, según se observa
+                    en ciertos principios y leyes a lo largo de la historia.
+                    <br>
+                    Cabe destacar que no es correcto pensar que una reacción química progresa hasta el punto en el cual
+                    su reactivo limitante se consume por completo; esto da lugar a dos conceptos: el rendimiento
+                    teórico, aquél que tendría lugar si el producto continuara formándose hasta que se acabara el
+                    reactivo limitante; el rendimiento de la reacción (o simplemente, el rendimiento), que representa la
+                    cantidad real de producto obtenido durante el proceso.
+                    <br>
+                    Para calcular el rendimiento de un reactivo limitante es posible dividir la cantidad obtenida en la
+                    realidad por máxima posible según la teoría; si se multiplica el rendimiento real por 100 y luego se
+                    divide por el teórico, se habla de rendimiento porcentual. Es importante señalar que siempre se
+                    cumple la desigualdad entre el rendimiento de la reacción y el teórico, por las siguientes razones:
+                    <br>
+                    algunos de los productos pueden no reaccionar;
+                    pueden tener lugar ciertas reacciones laterales que nos devuelvan un producto diferente al deseado;
+                    recuperar la muestra en su totalidad es casi imposible.
+                    <br>
+                </p>
+            </section>
+        </div>
+        <div *ngSwitchCase="'ma'" class="animated fadeIn">
+            <h2>Archivos de ayuda</h2>
+            <ul>
+                <li><a mat-button [routerLink]="['/visor/LibroM']">Metodología de la investigación</a></li>
+            </ul>
+            <h2>Videos de ayuda</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FrfRSiDGVjA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MOkAIpj41Wk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MEDnek9Jnrk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/A9Ag1seap2g" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/olgYihEe6B8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div *ngSwitchCase="'ref'" class="animated fadeIn reference">
+            <ul style="margin-top: 3%;">
+                <li>
+                    ¿Qué es un mol?
+                    <br>
+                    <a
+                        href="https://clickmica.fundaciondescubre.es/conoce/100-preguntas-100-respuestas/que-es-un-mol/">https://clickmica.fundaciondescubre.es/conoce/100-preguntas-100-respuestas/que-es-un-mol/</a>
+                </li>
+                <li>
+                    Calculos con moles
+                    <br>
+                    <a
+                        href="http://www.educamix.com/educacion/3_eso_materiales/b_v/conceptos/conceptos_bloque_5_3.htm">http://www.educamix.com/educacion/3_eso_materiales/b_v/conceptos/conceptos_bloque_5_3.htm</a>
+                </li>
+                <li>
+                    Conservación de la energía
+                    <br>
+                    <a
+                        href="https://clickmica.fundaciondescubre.es/conoce/descubrimientos/ley-la-conservacion-la-materia/">https://clickmica.fundaciondescubre.es/conoce/descubrimientos/ley-la-conservacion-la-materia/</a>
+                </li>
+                <li>
+                    Estequiometría
+                    <br>
+                    <a
+                        href="https://es.khanacademy.org/science/chemistry/chemical-reactions-stoichiome/stoichiometry-ideal/a/stoichiometry">https://es.khanacademy.org/science/chemistry/chemical-reactions-stoichiome/stoichiometry-ideal/a/stoichiometry</a>
+                </li>
+                <li>
+                    Reactivo limitante
+                    <br>
+                    <a
+                        href="https://es.khanacademy.org/science/chemistry/chemical-reactions-stoichiome/limiting-reagent-stoichiometry/a/limiting-reagents-and-percent-yield">https://es.khanacademy.org/science/chemistry/chemical-reactions-stoichiome/limiting-reagent-stoichiometry/a/limiting-reagents-and-percent-yield</a>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngSwitchDefault>Contenido no encontrado</div>
+    </div>
+</div>
